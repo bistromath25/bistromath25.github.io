@@ -1,7 +1,4 @@
-window.onscroll = function () {
-    scrollFunction()
-};
-
+window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
     if (document.body.scrollTop > screen.height * 0.7 || document.documentElement.scrollTop > screen.height * 0.7) {
         document.getElementById("Header").style.padding = "0px";

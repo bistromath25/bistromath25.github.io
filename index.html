@@ -3,7 +3,6 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <title>bistromath25.github.io</title>
-        <!-- assets/ -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css2?family=Kreon" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
@@ -33,43 +32,27 @@
         <div class="introbox animate__animated animate__bounceInLeft">
             <img src="assets/img/ghprofile.png">
             <h1>Welcome to my website!</h1>
+            <h3>This page is still under construction</h3>
         </div>
-        <div class="introbuffer"></div>
+		<div class="introbuffer"></div>
         <div class="page">
-            <!--
-                <div class="navbar"><a href="#About">About</a> &bull; <a href="#Projects">Projects</a> &bull; <a href="#Blog">Blog</a> &bull; <a href="#Contact">Contact</a></div>
-                -->
-            <!--
-                <div id="navbar" class="navbar">
-                	<div class="left fancyfont"><h3><a href="#Top">bistromath25.github.io</a></h3></div>
-                	<div class="right"><h3><a href="#Contact">Contact</a></h3></div>
-                	<div class="right"><h3><a href="#Blog">Blog</a></h3></div>
-                	<div class="right"><h3><a href="#Projects">Projects</a></h3></div>
-                	<div class="right"><h3><a href="#About">About</a></h3></div>
-                </div>
-                -->
-            <div class="boxbuffer"></div>
-            <div class="boxbuffer"></div>
-            <div class="boxbuffer"></div>
-            <div class="boxbuffer"></div>
-            <div class="boxbuffer"></div>
-            <div class="boxbuffer"></div>
-            <div class="boxbuffer"></div>
-            <div class="boxbuffer"></div>
-            <div class="boxbuffer"></div>
-            <div class="boxbuffer"></div>
             <div id="About" class="boxbuffer"></div>
             <div class="box">
                 <div class="text-align-center shadow-small border-radius-10px gray">
                     <h1>&bull; <a href="#About">About</a> &bull;</h1>
                     <div class="bg-blue">
-                        <h2>Hello! My name is bistromath25, and this is my website!</h2>
+                        <h2>Hello! I'm Brighten Zhang, and this is my website!</h2>
                     </div>
                 </div>
                 <div class="text-align-left gray">
-                    <p>I'm an incoming University of Waterloo Computer Science CO-OP student, class of 2027.</p>
+                    <p>I'm an incoming University of Waterloo Computer Science CO-OP student, class of 2027. I am very excited to start school in September&mdash;Go Warriors!</p>
+                    <div class="quote">
+                        The <i>Bistromathic Drive</i> is a wonderful new method of crossing interstellar distances without all that dangerous mucking about with Improbability Factors
+                        <div class="author">- Douglas Adams, <i>Life, the Universe, and Everything</i></div>
+                    </div>
                     <p>Why on earth should that mean that it is not real subtle science. There will be no foolish wand-waving or silly incantations in this class habit and language, love as powerful as your mother's for you leaves its own mark expecto rules. Friends we don't send wizards to Azkaban just for blowing up their aunts, greatest treasure. Could all have been killed — or worse, expelled wizarding world. Various disguises for those select few who possess the predisposition, I can teach you how to bewitch the mind and ensnare the senses, bravery.</p>
                     <p>There will be no foolish wand-waving or silly incantations in this class child funnunculus mirror. Spell a magic beyond all we do here, fickle friend lacarnum magic. Petrificus, I am a wizard, not a baboon brandishing a stick library, have leadership thrust upon them, and take up the mantle because they must.</p>
+                        <p>This page is still under construction. Stay tuned for more cool stuff!</p>
                 </div>
             </div>
             <div id="Projects" class="boxbuffer"></div>
@@ -82,16 +65,16 @@
                 </div>
                 <div class="row">
                     <div class="card">
-                        <img src="assets/img/projects/imgdb.png">
-                        <p><a href="https://imgdb.bistromath25.repl.co/" target="_blank">imgdb</a><br>Simple image hosting</p>
+                        <img src="assets/img/forest.jpg">
+                        <p><a href="#" target="_blank">Project 1</a><br>This is the first project</p>
                     </div>
                     <div class="card">
-                        <img src="assets/img/projects/LiteBlog.png">
-                        <p><a href="https://bistromath25.github.io/LiteBlog/" target="_blank">LiteBlog</a><br>A minimal HTML theme for blogs</p>
+                        <img src="assets/img/forest.jpg">
+                        <p><a href="#" target="_blank">Project 2</a><br>This is the second project</p>
                     </div>
                     <div class="card">
-                        <img src="assets/img/projects/potteripsum.png">
-                        <p><a href="https://bistromath25.github.io/potteripsum/" target="_blank">potteripsum</a><br>Harry Potter lorem ipsum text generator</p>
+                        <img src="assets/img/forest.jpg">
+                        <p><a href="#" target="_blank">Project 3</a><br>This is the third project</p>
                     </div>
                 </div>
             </div>
@@ -134,21 +117,21 @@
                     </ul>
                     </p>
                     <div class="code shadow-small">struct DSU {
-                        vector&lt;int> p;
-                        void init(int N) { p = vector&lt;int>(N + 1, -1); }
-                        int find(int x) { return p[x] &lt; 0 ? x : p[x] = find(p[x]); }
-                        bool same(int x, int y) { return find(x) == find(y); }
-                        int size(int x) { return -p[find(x)]; }
-                        bool merge(int x, int y) {
-                        x = find(x);
-                        y = find(y);
-                        if (x == y) return false;
-                        if (p[x] > p[y]) swap(x, y);
-                        p[x] += p[y];
-                        p[y] = x;
-                        return true;
-                        }
-                        };
+	vector&lt;int> p;
+	void init(int N) { p = vector&lt;int>(N + 1, -1); }
+	int find(int x) { return p[x] &lt; 0 ? x : p[x] = find(p[x]); }
+	bool same(int x, int y) { return find(x) == find(y); }
+	int size(int x) { return -p[find(x)]; }
+	bool merge(int x, int y) {
+	x = find(x);
+	y = find(y);
+	if (x == y) return false;
+	if (p[x] > p[y]) swap(x, y);
+	p[x] += p[y];
+	p[y] = x;
+	return true;
+	}
+};
                     </div>
                     <img src="assets/img/mountain.jpg" class="shadow-small">
                     <h4 class="text-align-center">Mountain</h4>
