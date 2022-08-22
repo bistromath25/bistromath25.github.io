@@ -94,8 +94,8 @@ a:hover {
     position: absolute;
     top: 0;
     background-image: url(../img/mountain.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100%;
     z-index: 999;
@@ -312,7 +312,7 @@ a:hover {
 }
 
 pre {
-	font-family: "Open Sans", serif;
+    font-family: "Open Sans", serif;
 }
 
 ul {

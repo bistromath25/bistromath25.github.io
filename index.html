@@ -34,7 +34,7 @@
             <h1>Welcome to my website!</h1>
             <h3>This page is still under construction</h3>
         </div>
-		<div class="introbuffer"></div>
+        <div class="introbuffer"></div>
         <div class="page">
             <div id="About" class="boxbuffer"></div>
             <div class="box">
@@ -52,7 +52,7 @@
                     </div>
                     <p>Why on earth should that mean that it is not real subtle science. There will be no foolish wand-waving or silly incantations in this class habit and language, love as powerful as your mother's for you leaves its own mark expecto rules. Friends we don't send wizards to Azkaban just for blowing up their aunts, greatest treasure. Could all have been killed — or worse, expelled wizarding world. Various disguises for those select few who possess the predisposition, I can teach you how to bewitch the mind and ensnare the senses, bravery.</p>
                     <p>There will be no foolish wand-waving or silly incantations in this class child funnunculus mirror. Spell a magic beyond all we do here, fickle friend lacarnum magic. Petrificus, I am a wizard, not a baboon brandishing a stick library, have leadership thrust upon them, and take up the mantle because they must.</p>
-                        <p>This page is still under construction. Stay tuned for more cool stuff!</p>
+                    <p>This page is still under construction. Stay tuned for more cool stuff!</p>
                 </div>
             </div>
             <div id="Projects" class="boxbuffer"></div>
@@ -117,25 +117,25 @@
                     </ul>
                     </p>
                     <div class="code shadow-small">struct DSU {
-	vector&lt;int> p;
-	void init(int N) { p = vector&lt;int>(N + 1, -1); }
-	int find(int x) { return p[x] &lt; 0 ? x : p[x] = find(p[x]); }
-	bool same(int x, int y) { return find(x) == find(y); }
-	int size(int x) { return -p[find(x)]; }
-	bool merge(int x, int y) {
-	x = find(x);
-	y = find(y);
-	if (x == y) return false;
-	if (p[x] > p[y]) swap(x, y);
-	p[x] += p[y];
-	p[y] = x;
-	return true;
-	}
-};
+                        vector&lt;int> p;
+                        void init(int N) { p = vector&lt;int>(N + 1, -1); }
+                        int find(int x) { return p[x] &lt; 0 ? x : p[x] = find(p[x]); }
+                        bool same(int x, int y) { return find(x) == find(y); }
+                        int size(int x) { return -p[find(x)]; }
+                        bool merge(int x, int y) {
+                        x = find(x);
+                        y = find(y);
+                        if (x == y) return false;
+                        if (p[x] > p[y]) swap(x, y);
+                        p[x] += p[y];
+                        p[y] = x;
+                        return true;
+                        }
+                        };
                     </div>
                     <img src="assets/img/mountain.jpg" class="shadow-small">
                     <h4 class="text-align-center">Mountain</h4>
-                    <p>Above is a picture of a mountain in a lake.</p>
+                    <p>Above is a picture of a mountain.</p>
                 </div>
             </div>
             <div class="boxbuffer"></div>
