@@ -7,6 +7,6 @@ function scrollFunction() {
     } else {
         document.getElementById("Header").style.padding = "10px";
         document.getElementById("Header").style.fontSize = "1em";
-        document.getElementById("Header").style.opacity = "0.8";
+        document.getElementById("Header").style.opacity = "0.4";
     }
 }
