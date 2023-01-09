@@ -97,8 +97,8 @@ a:hover {
 .introbox {
     position: absolute;
     top: 0;
-    background-image: url(../img/bgwhite.jpg);
-	background-repeat: no-repeat;
+    background-image: url(../img/mountain.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
 	background-attachment: fixed;
     width: 100%;
@@ -107,23 +107,15 @@ a:hover {
     text-align: center;
 }
 
-.minibox {
-	position: absolute;
-	float: center;
-	width: 400px;
-}
-
-/* Row of images (for social media icons) */
-.introbox .column {
-	float: right;
-    width: 33.3%;
-    padding: 5px;
-}
-
-.introbox .row::after {
-    content: "";
-    clear: both;
-    display: table;
+.introbox img {
+    margin-top: 15%;
+    margin-bottom: 15px;
+    padding: 10px;
+    max-height: 200px;
+    position: relative;
+    border: 1px solid #0e0fed;
+    border-radius: 50%;
+    vertical-align: middle;
 }
 
 .box {
@@ -138,7 +130,7 @@ a:hover {
 }
 
 .introbuffer {
-    height: 87vh;  /* 94 */
+    height: 94vh;
 }
 
 .introbuffer-blog {
@@ -218,10 +210,6 @@ a:hover {
 
 .blue {
     color: #94f0f1;
-}
-
-.blue-dark {
-	color: #0e0fed;
 }
 
 .green {
@@ -360,6 +348,6 @@ ul {
 }
 
 .zoom:hover {
-	transform: scale(1.1);
+	transform: scale(1.2);
 	border: none;
 }
