@@ -40,6 +40,7 @@ h1 {
     font-family: "Kreon", serif;
     font-weight: bold;
 	padding: 0.2em;
+	font-size: 40pt;
 }
 
 h2 {
@@ -76,6 +77,10 @@ a:hover {
     transition: all 0.3s ease-in-out;
     opacity: 0.4;
     background-color: #f5f5f5;
+}
+
+#CHANGE_MY_COLOR {
+	transition: color 3s ease-in-out;
 }
 
 .topbar {
@@ -152,6 +157,11 @@ a:hover {
 
 .border-radius-10px {
     border-radius: 10px;
+}
+
+.bottom-border-radius-10px {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .shadow-small {
@@ -250,6 +260,7 @@ a:hover {
 
 .row {
     display: flex;
+	border-radius: 10px;
 }
 
 .card {
@@ -349,10 +360,22 @@ ul {
     text-align: center;
 }
 
+.hoverable {
+	transition: background-color 2s ease-in-out;
+}
+
 .hoverable:hover {
+	/*background-color: #94f0f1;*/
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
     margin-bottom: 10px;
     border-radius: 10px;
+	
+	/*
+	background-color: red;
+	background-image: linear-gradient(45deg, #94f0f1, #ffdc6a);
+	background-size: 100%;
+	background-repeat: repeat;
+	*/
 }
 
 .zoom {
@@ -362,4 +385,23 @@ ul {
 .zoom:hover {
 	transform: scale(1.1);
 	border: none;
+}
+
+/* Gradient text */
+.gradient-text {
+	background-color: red;
+	background-image: linear-gradient(45deg, #0e0fed, #ffdc6a);
+	background-size: 100%;
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+.gradient-bg {
+	background-color: red;
+	background-image: linear-gradient(45deg, #94f0f1, #ffdc6a);
+	background-size: 100%;
+	background-repeat: repeat;
 }
