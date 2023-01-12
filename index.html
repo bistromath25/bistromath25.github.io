@@ -38,14 +38,21 @@
             </div>
         </div>
         <div id="Introbox" class="introbox animate__animated animate__rotateIn">
-            <img src="assets/img/profiles/profilepic.jpeg" class="zoom" style="margin-top:15%;margin-bottom:15px;padding:10px;max-height:200px;position:relative;border-radius:50%;vertical-align:middle;">
-            <h1 id="CHANGE_MY_COLOR" style="font-size:50px;">Hello! I'm Brighten!</h1>
+            <img src="assets/img/profiles/profilepic.jpeg" class="zoom" style="margin-top:12%;margin-bottom:15px;padding:10px;max-height:200px;position:relative;border-radius:50%;vertical-align:middle;">
+            <h1 id="CHANGE_MY_COLOR" style="font-size:50px;"><a href="#">Hello! I'm Brighten!</a></h1>
             <h3 class="gradient-text" style="padding-left:24%;padding-right:24%;">Welcome to my slice of the internet! I'm currently in my 1B term studying Computer Science at the University of Waterloo.</h3>
-            <div class="row" style="padding-top:5%;padding-left:30%;padding-right:30%;">
+            <!--
+			<div class="row" style="padding-top:5%;padding-left:30%;padding-right:30%;">
                 <div class="column zoom"><a href="https://www.linkedin.com/in/brighten-zhang/"><img src="assets/img/socials/linkedinlogo.png" style="width:32%;"></a></div>
                 <div class="column zoom"><a href="https://github.com/bistromath25"><img src="assets/img/socials/github-mark.png" style="width:32%;"></a></div>
                 <div class="column zoom"><a href="mailto:brightenzhang@gmail.com"><img src="assets/img/socials/mail.png" style="width:32%;"></a></div>
             </div>
+			-->
+			<div class="row" style="padding-top:5%;padding-left:30%;padding-right:30%;">
+				<div class="column zoom"><img src="assets/img/socials/linkedinlogo.png" style="width:32%;" onclick="location.href='https://www.linkedin.com/in/brighten-zhang/'"></div>
+				<div class="column zoom"><img src="assets/img/socials/github-mark.png" style="width:32%;" onclick="location.href='https://github.com/bistromath25'"></div>
+				<div class="column zoom"><img src="assets/img/socials/mail.png" style="width:32%;" onclick="location.href='mailto:brightenzhang@gmail.com'"></div>
+			</div>
         </div>
         <div class="introbuffer"></div>
         <div id="page" class="page">
@@ -180,6 +187,7 @@
             </div>
         </div>
         <script type="text/javascript">
+			/*
             $(function() {
             	var colors = ["#94f0f1", "#0e0fed"];
             	var colorsIdx = 0;
@@ -188,6 +196,7 @@
             		colorsIdx = 1 - colorsIdx;
             	}, 3000);
             })
+			*/
         </script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>AOS.init({duration:2100});</script>
