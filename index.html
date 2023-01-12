@@ -4,26 +4,23 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <title>bistromath25.github.io</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Kreon" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <script src="assets/js/shrinkHeader.js"></script>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="assets/js/animateTitle.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div id="Top"></div>
-        <div id="Header" class="topbar animate__animated animate__fadeIn">
+        <div id="Header" class="topbar">
             <div class="topbarbox fancyfont">
                 <h2><a href="#">bistromath25.github.io</a></h2>
             </div>
             <div class="topbarbox right">
                 <h2><a href="assets/img/wwbrightenzhang.pdf" target="_blank">Resume</a></h2>
             </div>
-            <!--<div class="topbarbox right">
-                <h2><a href="https://github.com/bistromath25">Github</a></h2>
-                </div>-->
             <div class="topbarbox right">
                 <h2><a href="https://bookshelf.bistromath25.repl.co">Bookshelf</a></h2>
             </div>
@@ -37,10 +34,17 @@
                 <h2><a href="#About">About</a></h2>
             </div>
         </div>
-        <div id="Introbox" class="introbox animate__animated animate__rotateIn">
-            <img src="assets/img/profiles/profilepic.jpeg" class="zoom" style="margin-top:12%;margin-bottom:15px;padding:10px;max-height:200px;position:relative;border-radius:50%;vertical-align:middle;">
-            <h1 id="CHANGE_MY_COLOR" style="font-size:50px;"><a href="#">Hello! I'm Brighten!</a></h1>
-            <h3 class="gradient-text" style="padding-left:24%;padding-right:24%;">Welcome to my slice of the internet! I'm currently in my 1B term studying Computer Science at the University of Waterloo.</h3>
+        <div id="Introbox" class="introbox">
+            <img src="assets/img/profiles/profilepic.jpeg" class="zoom" style="margin-top:10%;margin-bottom:15px;padding:10px;max-height:200px;position:relative;border-radius:50%;vertical-align:middle;">
+			<h1 class="ml1">
+				<span class="text-wrapper">
+					<span class="line line1"></span>
+					<span class="letters">Hello! I'm Brighten!</span>
+					<span class="line line2"></span>
+				</span>
+			</h1>
+            <!--<h1 id="CHANGE_MY_COLOR" style="font-size:50px;"><a href="#">Hello! I'm Brighten!</a></h1>-->
+            <h3 class="gray" style="padding-left:24%;padding-right:24%;">Welcome to my slice of the internet! I'm currently in my 1B term studying Computer Science at the University of Waterloo.</h3>
             <!--
 			<div class="row" style="padding-top:5%;padding-left:30%;padding-right:30%;">
                 <div class="column zoom"><a href="https://www.linkedin.com/in/brighten-zhang/"><img src="assets/img/socials/linkedinlogo.png" style="width:32%;"></a></div>
@@ -70,6 +74,7 @@
                 </div>
             </div>
             <div id="Projects" class="boxbuffer"></div>
+			<div class="bg-img">
             <div class="box">
                 <div class="text-align-center border-radius-10px gray zoom">
                     <h1>&bull; <a href="#Projects">Projects</a> &bull;</h1>
@@ -77,7 +82,7 @@
                 <!--<div class="text-align-left gray" data-aos="fade-up">
                     <p>Here are a few of things I've been working on.</p>
                     </div>-->
-                <div class="row hoverable" data-aos="fade-right">
+                <div class="row hoverable" style="background-color:#94f0f1;" data-aos="fade-right">
                     <div class="column">
                         <div class="gray">
                             <h2><a href="https://github.com/bistromath25/moraband">Moraband Chess Engine</a></h2>
@@ -93,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row hoverable" data-aos="fade-left">
+                <div class="row hoverable" style="background-color:#94f0f1;" data-aos="fade-left">
                     <div class="column" style="float:left" data-aos="zoom-in">
                         <img src="assets/img/projects/imgdb.PNG" style="width:400px;height:300px;object-fit:cover;">
                         <div class="overlay border-radius-10px">
@@ -109,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row hoverable" data-aos="fade-right">
+                <div class="row hoverable" style="background-color:#94f0f1;" data-aos="fade-right">
                     <div class="column">
                         <h2><a href="https://github.com/bistromath25/wordpredictor">wordpredictor</a></h2>
                         <div class="gray">
@@ -143,7 +148,7 @@
                     </div>
                     </div>
                     -->
-            </div>
+            </div></div>
             <div id="Blog" class="boxbuffer"></div>
             <div class="box">
                 <div class="text-align-center border-radius-10px gray zoom">
@@ -161,30 +166,17 @@
                 <div class="text-align-left gray" data-aos="fade-up">
                     <p>Find me on <a href="https://www.linkedin.com/in/brighten-zhang/">linkedin</a>, visit my <a href="https://github.com/bistromath25">github</a>, or shoot me an <a href="mailto:brightenzhang@gmail.com">email</a>... I look forward to hearing from you :p</p>
                 </div>
-                <!--
-                    <div class="row" data-aos="fade-up">
-                        <div class="column" style="width:50%;">
-                            <div class="gray hoverable">
-                                <p style="text-align:justify;">Well, I guess this is the end of the line for you. I hope you had a fine time scrolling through here, and good luck on your future endeavours! :p</p>
-                            </div>
-                        </div>
-                        <div class="column" style="width:50%;">
-                            <div class="gray hoverable">
-                                <p style="text-align:justify;">Email: <a href="mailto:brightenzhang@gmail.com">brightenzhang@gmail.com</a><br>Github: <a href="https://github.com/bistromath25">bistromath25</a><br>LinkedIn: <a href="https://www.linkedin.com/in/brighten-zhang/">brighten-zhang</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    -->
             </div>
             <div class="boxbuffer"></div>
+			<div class="bg-img" style="background-image:url(assets/img/mainbg3.jpg);">
             <div class="box">
-                <div class="text-align-center shadow-small border-radius-10px gray">
-                    <h3>&bull; <a href="mailto:brightenzhang@gmail.com">Email me!</a> &bull;</h3>
-                    <div class="bg-blue bottom-border-radius-10px">
+                <div class="text-align-center gray">
+                    <h3 style="font-family:Archivo Black;">&bull; <a href="mailto:brightenzhang@gmail.com">Email me!</a> &bull;</h3>
+                    <div class="text-align-center gray">
                         <h4 class="gray">&copy; Brighten Zhang</h4>
                     </div>
                 </div>
-            </div>
+            </div></div>
         </div>
         <script type="text/javascript">
 			/*
@@ -197,7 +189,8 @@
             	}, 3000);
             })
 			*/
-        </script>
+		</script>
+		<script src="assets/js/animateTitle.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>AOS.init({duration:2100});</script>
     </body>

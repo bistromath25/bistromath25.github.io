@@ -4,16 +4,17 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <title>bistromath25.github.io</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Kreon" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <script src="assets/js/shrinkHeader.js"></script>
+        <script src="assets/js/animateTitle.js"></script>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div id="Top"></div>
-        <div id="Header" class="topbar animate__animated animate__fadeIn">
+        <div id="Header" class="topbar">
             <div class="topbarbox fancyfont">
                 <h2><a href="#">bistromath25.github.io</a></h2>
             </div>
@@ -21,7 +22,7 @@
                 <h2><a href="assets/img/wwbrightenzhang.pdf" target="_blank">Resume</a></h2>
             </div>
             <div class="topbarbox right">
-                <h2><a href="https://github.com/bistromath25">Github</a></h2>
+                <h2><a href="https://bookshelf.bistromath25.repl.co">Bookshelf</a></h2>
             </div>
             <div class="topbarbox right">
                 <h2><a href="#Blog">Blog</a></h2>
@@ -33,14 +34,28 @@
                 <h2><a href="#About">About</a></h2>
             </div>
         </div>
-        <div id="Introbox" class="introbox animate__animated animate__rotateIn">
-            <img src="assets/img/profiles/profilepic.jpeg" class="zoom" style="margin-top:15%;margin-bottom:15px;padding:10px;max-height:200px;position:relative;border-radius:50%;vertical-align:middle;">
-            <h1 id="CHANGE_MY_COLOR">Hello! I'm Brighten!</h1>
-            <h3 class="gradient-text" style="padding-left:24%;padding-right:24%;">Welcome to my slice of the internet! I'm currently in my 1B term studying Computer Science at the University of Waterloo.</h3>
+        <div id="Introbox" class="introbox">
+            <img src="assets/img/profiles/profilepic.jpeg" class="zoom" style="margin-top:10%;margin-bottom:15px;padding:10px;max-height:200px;position:relative;border-radius:50%;vertical-align:middle;">
+			<h1 class="ml1">
+				<span class="text-wrapper">
+					<span class="line line1"></span>
+					<span class="letters">Hello! I'm Brighten!</span>
+					<span class="line line2"></span>
+				</span>
+			</h1>
+            <!--<h1 id="CHANGE_MY_COLOR" style="font-size:50px;"><a href="#">Hello! I'm Brighten!</a></h1>-->
+            <h3 class="gray" style="padding-left:24%;padding-right:24%;">Welcome to my slice of the internet! I'm currently in my 1B term studying Computer Science at the University of Waterloo.</h3>
+            <!--
 			<div class="row" style="padding-top:5%;padding-left:30%;padding-right:30%;">
-				<div class="column zoom"><a href="https://www.linkedin.com/in/brighten-zhang/"><img src="assets/img/socials/linkedinlogo.png" style="width:32%;"></a></div>
-				<div class="column zoom"><a href="https://github.com/bistromath25"><img src="assets/img/socials/github-mark.png" style="width:32%;"></a></div>
-				<div class="column zoom"><a href="mailto:brightenzhang@gmail.com"><img src="assets/img/socials/mail.png" style="width:32%;"></a></div>
+                <div class="column zoom"><a href="https://www.linkedin.com/in/brighten-zhang/"><img src="assets/img/socials/linkedinlogo.png" style="width:32%;"></a></div>
+                <div class="column zoom"><a href="https://github.com/bistromath25"><img src="assets/img/socials/github-mark.png" style="width:32%;"></a></div>
+                <div class="column zoom"><a href="mailto:brightenzhang@gmail.com"><img src="assets/img/socials/mail.png" style="width:32%;"></a></div>
+            </div>
+			-->
+			<div class="row" style="padding-top:5%;padding-left:30%;padding-right:30%;">
+				<div class="column zoom"><img src="assets/img/socials/linkedinlogo.png" style="width:32%;" onclick="location.href='https://www.linkedin.com/in/brighten-zhang/'"></div>
+				<div class="column zoom"><img src="assets/img/socials/github-mark.png" style="width:32%;" onclick="location.href='https://github.com/bistromath25'"></div>
+				<div class="column zoom"><img src="assets/img/socials/mail.png" style="width:32%;" onclick="location.href='mailto:brightenzhang@gmail.com'"></div>
 			</div>
         </div>
         <div class="introbuffer"></div>
@@ -52,25 +67,26 @@
                 </div>
                 <div class="text-align-left gray" data-aos="fade-up">
                     <p>Hello! My name is Brighten Zhang. I'm a University of Waterloo Computer Science student (class of 2027) currently in my 1B term, and this is my little slice of the internet. To be clear, my little slice comprises of <a href="https://firstsiteguide.com/how-many-websites/">about 1/1,980,000,000 of the internet</a>, which makes it all the more marvelous that you find yourself here :)</p>
-					<p>I’m passionate about using technology to improve the lives of others and am always seeking opportunities to apply and enhance my technical skills by contributing to meaningful projects.</p>
                     <p>When I'm not grinding homework or bricking quizzes I enjoy playing basketball and swimming, as well as watching grass grow in real time. I also enjoy playing piano and chess.</p>
+                    <p>I’m passionate about using technology to improve the lives of others and am always seeking opportunities to apply and enhance my technical skills by contributing to meaningful projects.</p>
                     <p>I'm hoping to use this github page not only as a place to mark my online presence, but also as a place to learn more about developing and organizing my projects professionally. I've got a lot to learn, but with like-minded peers backing me up, I'm confident we can finally figure out how to <a href="https://www.reddit.com/r/ProgrammerHumor/search/?q=center%20a%20div&restrict_sr=1&sr_nsfw=">center a div</a>.</p>
-					<p>Check out my resume <a href="assets/img/wwbrightenzhang.pdf" target=”_blank”>here</a>!</p>
+                    <p>Check out my resume <a href="assets/img/wwbrightenzhang.pdf" target=”_blank”>here</a>!</p>
                 </div>
             </div>
             <div id="Projects" class="boxbuffer"></div>
+			<div class="bg-img">
             <div class="box">
                 <div class="text-align-center border-radius-10px gray zoom">
                     <h1>&bull; <a href="#Projects">Projects</a> &bull;</h1>
                 </div>
-				<!--<div class="text-align-left gray" data-aos="fade-up">
-					<p>Here are a few of things I've been working on.</p>
-				</div>-->
-                <div class="row hoverable" data-aos="fade-right">
+                <!--<div class="text-align-left gray" data-aos="fade-up">
+                    <p>Here are a few of things I've been working on.</p>
+                    </div>-->
+                <div class="row hoverable" style="background-color:#94f0f1;" data-aos="fade-right">
                     <div class="column">
                         <div class="gray">
                             <h2><a href="https://github.com/bistromath25/moraband">Moraband Chess Engine</a></h2>
-                            <p style="text-align:justify;">Moraband is a UCI-compatible chess engine written in C++, featuring modern search and evaluation techniques. Developing my own chess engine was a great way to combine my passion of chess with my love of computer programming!</p>
+                            <p style="text-align:justify;">Moraband is a UCI-compatible chess engine written in C++, featuring modern search and evaluation techniques, with a legal move generator measuring over 200,000,000 nodes/second (moves/second). Developing my own chess engine was a great way to combine my passion of chess with my love of computer programming!</p>
                             <p class="bold">Code: <a href="https://github.com/bistromath25/moraband">github.com/bistromath25/moraband</a></p>
                             <p class="bold">Demo: <a href="https://lichess.org/@/morabandbot">lichess.org/@/morabandbot</a></p>
                         </div>
@@ -82,23 +98,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="row hoverable" data-aos="fade-left">
-					<div class="column" style="float:left" data-aos="zoom-in">
-						<img src="assets/img/projects/imgdb.PNG" style="width:400px;height:300px;object-fit:cover;">
+                <div class="row hoverable" style="background-color:#94f0f1;" data-aos="fade-left">
+                    <div class="column" style="float:left" data-aos="zoom-in">
+                        <img src="assets/img/projects/imgdb.PNG" style="width:400px;height:300px;object-fit:cover;">
                         <div class="overlay border-radius-10px">
-							<div class="text"><a href="https://imgdb.bistromath25.repl.co">Demo</a></div>
+                            <div class="text"><a href="https://imgdb.bistromath25.repl.co">Demo</a></div>
                         </div>
-					</div>
-					<div class="column">
-						<div class="gray">
-							<h2><a href="https://github.com/bistromath25/imgdb">imgdb</a></h2>
-							<p style="text-align:justify;">Built with node js (taking advantage of the <a href="https://www.npmjs.com/package/multer">multer</a> package) and hosted on <a href="https://replit.com">replit</a>, imgdb provides a straight-forward solution to storing your images online. Simply upload an image, and visit the resulting link whenever you wish to retrieve it.</p>
-							<p class="bold">Code: <a href="https://github.com/bistromath25/imgdb">github.com/bistromath25/imgdb</a></p>
-							<p class="bold">Demo: <a href="https://imgdb.bistromath25.repl.co">imgdb.bistromath25.repl.co</a></p>
-						</div>
-					</div>
-				</div>
-                <div class="row hoverable" data-aos="fade-right">
+                    </div>
+                    <div class="column">
+                        <div class="gray">
+                            <h2><a href="https://github.com/bistromath25/imgdb">imgdb</a></h2>
+                            <p style="text-align:justify;">Built with node js (taking advantage of the <a href="https://www.npmjs.com/package/multer">multer</a> package) and hosted on <a href="https://replit.com">replit</a>, imgdb provides a straight-forward solution to storing your images online. Simply upload an image, and visit the resulting link whenever you wish to retrieve it.</p>
+                            <p class="bold">Code: <a href="https://github.com/bistromath25/imgdb">github.com/bistromath25/imgdb</a></p>
+                            <p class="bold">Demo: <a href="https://imgdb.bistromath25.repl.co">imgdb.bistromath25.repl.co</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row hoverable" style="background-color:#94f0f1;" data-aos="fade-right">
                     <div class="column">
                         <h2><a href="https://github.com/bistromath25/wordpredictor">wordpredictor</a></h2>
                         <div class="gray">
@@ -114,7 +130,25 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <!--
+                    <div class="row hoverable" data-aos="fade-left">
+                    <div class="column" style="float:left" data-aos="zoom-in">
+                    <img src="assets/img/projects/bookshelf.PNG" style="width:400px;height:300px;object-fit:cover;">
+                            <div class="overlay border-radius-10px">
+                    <div class="text"><a href="https://bookshelf.bistromath25.repl.co/index.html">Demo</a></div>
+                            </div>
+                    </div>
+                    <div class="column">
+                    <div class="gray">
+                    <h2><a href="https://bookshelf.bistromath25.repl.co/index.html">Bookshelf</a></h2>
+                    <p style="text-align:justify;">My online bookshelf, or a catalogue of my most memorable reads from recent years. One of my earlier web projects.</p>
+                    <p class="bold">Code: <a href="https://bookshelf.bistromath25.repl.co/index.html">bookshelf.bistromath25.repl.co/index.html</a></p>
+                    <p class="bold">Demo: <a href="https://bookshelf.bistromath25.repl.co/index.html">https://bookshelf.bistromath25.repl.co/index.html</a></p>
+                    </div>
+                    </div>
+                    </div>
+                    -->
+            </div></div>
             <div id="Blog" class="boxbuffer"></div>
             <div class="box">
                 <div class="text-align-center border-radius-10px gray zoom">
@@ -132,45 +166,32 @@
                 <div class="text-align-left gray" data-aos="fade-up">
                     <p>Find me on <a href="https://www.linkedin.com/in/brighten-zhang/">linkedin</a>, visit my <a href="https://github.com/bistromath25">github</a>, or shoot me an <a href="mailto:brightenzhang@gmail.com">email</a>... I look forward to hearing from you :p</p>
                 </div>
-				<!--
-                <div class="row" data-aos="fade-up">
-                    <div class="column" style="width:50%;">
-                        <div class="gray hoverable">
-                            <p style="text-align:justify;">Well, I guess this is the end of the line for you. I hope you had a fine time scrolling through here, and good luck on your future endeavours! :p</p>
-                        </div>
-                    </div>
-                    <div class="column" style="width:50%;">
-                        <div class="gray hoverable">
-                            <p style="text-align:justify;">Email: <a href="mailto:brightenzhang@gmail.com">brightenzhang@gmail.com</a><br>Github: <a href="https://github.com/bistromath25">bistromath25</a><br>LinkedIn: <a href="https://www.linkedin.com/in/brighten-zhang/">brighten-zhang</a></p>
-                        </div>
-                    </div>
-                </div>
-            	-->
-			</div>
+            </div>
             <div class="boxbuffer"></div>
+			<div class="bg-img" style="background-image:url(assets/img/mainbg3.jpg);">
             <div class="box">
-                <div class="text-align-center shadow-small border-radius-10px gray">
-                    <h3>&bull; <a href="mailto:brightenzhang@gmail.com">Email me!</a> &bull;</h3>
-                    <div class="bg-blue bottom-border-radius-10px">
+                <div class="text-align-center gray">
+                    <h3 style="font-family:Archivo Black;">&bull; <a href="mailto:brightenzhang@gmail.com">Email me!</a> &bull;</h3>
+                    <div class="text-align-center gray">
                         <h4 class="gray">&copy; Brighten Zhang</h4>
                     </div>
                 </div>
-            </div>
+            </div></div>
         </div>
-		<script type="text/javascript">
+        <script type="text/javascript">
 			/*
-			$(function() {
-				//var colors = ["#FFBF00", "#FFAC1C", "#D27D2D", "#0e0fed"];
-				var colors = ["#ffdc6a", "#0e0fed"];
-				var colorsIdx = 0;
-				setInterval(function() { 
-					document.getElementById("CHANGE_MY_COLOR").style.color = colors[colorsIdx];
-					colorsIdx = 1 - colorsIdx;
-				}, 3000);
-			})
+            $(function() {
+            	var colors = ["#94f0f1", "#0e0fed"];
+            	var colorsIdx = 0;
+            	setInterval(function() { 
+            		document.getElementById("CHANGE_MY_COLOR").style.color = colors[colorsIdx];
+            		colorsIdx = 1 - colorsIdx;
+            	}, 3000);
+            })
 			*/
 		</script>
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<script>AOS.init({duration:2100});</script>
+		<script src="assets/js/animateTitle.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init({duration:2100});</script>
     </body>
 </html>
