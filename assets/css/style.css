@@ -39,12 +39,12 @@ p {
 h1 {
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
-	padding: 0.2em;
-	font-size: 30pt;
+    padding: 0.2em;
+    font-size: 30pt;
 }
 
 h2 {
-	padding: 0.2em;
+    padding: 0.2em;
 }
 
 h4 {
@@ -65,7 +65,7 @@ a:hover {
     /*color: #94f0f1;*/
     /*text-decoration-color: #94f0f1;*/
     text-decoration-color: #94f0f1;
-	text-underline-offset: 0.2em;
+    text-underline-offset: 0.2em;
 }
 
 .content {
@@ -77,11 +77,11 @@ a:hover {
 #Header {
     transition: all 0.3s ease-in-out;
     opacity: 0.4;
-	background-color: #F0F0F0;
+    background-color: #F0F0F0;
 }
 
 #CHANGE_MY_COLOR {
-	transition: color 3s ease-in-out;
+    transition: color 3s ease-in-out;
 }
 
 .topbar {
@@ -104,9 +104,9 @@ a:hover {
     position: absolute;
     top: 0;
     background-image: url(../img/bgwhite.jpg);
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-	background-attachment: fixed;
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
     z-index: 999;
@@ -114,14 +114,14 @@ a:hover {
 }
 
 .minibox {
-	position: absolute;
-	float: center;
-	width: 400px;
+    position: absolute;
+    float: center;
+    width: 400px;
 }
 
 /* Row of images (for social media icons) */
 .introbox .column {
-	float: right;
+    float: right;
     width: 33.3%;
     padding: 5px;
 }
@@ -134,17 +134,18 @@ a:hover {
 
 .box {
     position: relative;
-	padding: 0% 1% 0% 1%;
-	margin: 0% 10% 0% 10%;
+    padding: 0% 1% 0% 1%;
+    margin: 0% 10% 0% 10%;
 }
 
 .boxbuffer {
     height: 6vh;
-	background-color: transparent;
+    background-color: transparent;
 }
 
 .introbuffer {
-    height: 87vh;  /* 94 */
+    height: 87vh;
+    /* 94 */
 }
 
 .introbuffer-blog {
@@ -161,8 +162,8 @@ a:hover {
 }
 
 .bottom-border-radius-10px {
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .shadow-small {
@@ -232,7 +233,7 @@ a:hover {
 }
 
 .blue-dark {
-	color: #0e0fed;
+    color: #0e0fed;
 }
 
 .green {
@@ -261,7 +262,7 @@ a:hover {
 
 .row {
     display: flex;
-	border-radius: 10px;
+    border-radius: 10px;
 }
 
 .card {
@@ -339,7 +340,7 @@ ul {
 
 .overlay {
     position: absolute;
-	float: center;
+    float: center;
     top: 40%;
     bottom: 40%;
     left: 30%;
@@ -362,16 +363,16 @@ ul {
 }
 
 .hoverable {
-	transition: background-color 2s ease-in-out;
+    transition: background-color 2s ease-in-out;
 }
 
 .hoverable:hover {
-	background-color: #F0F0F0;
+    background-color: #F0F0F0;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
     margin-bottom: 10px;
     border-radius: 10px;
-	
-	/*
+
+    /*
 	background-color: red;
 	background-image: linear-gradient(45deg, #94f0f1, #ffdc6a);
 	background-size: 100%;
@@ -380,29 +381,29 @@ ul {
 }
 
 .zoom {
-	transition: transform .2s;
+    transition: transform .2s;
 }
 
 .zoom:hover {
-	transform: scale(1.1);
-	border: none;
+    transform: scale(1.1);
+    border: none;
 }
 
 /* Gradient text */
 .gradient-text {
-	background-color: red;
-	background-image: linear-gradient(45deg, #0e0fed, #ffdc6a);
-	background-size: 100%;
-	background-repeat: repeat;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; 
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
+    background-color: red;
+    background-image: linear-gradient(45deg, #0e0fed, #ffdc6a);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 .gradient-bg {
-	background-color: red;
-	background-image: linear-gradient(45deg, #94f0f1, #ffdc6a);
-	background-size: 100%;
-	background-repeat: repeat;
+    background-color: red;
+    background-image: linear-gradient(45deg, #94f0f1, #ffdc6a);
+    background-size: 100%;
+    background-repeat: repeat;
 }
