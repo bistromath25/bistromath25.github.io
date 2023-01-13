@@ -22,7 +22,7 @@ html {
 body {
     margin: 0px;
     font-family: "Open Sans", serif;
-    font-size: 14pt;
+    font-size: 18px;
     background-color: #f5f5f5;
     color: #0e0fed;
 }
@@ -40,7 +40,7 @@ h1 {
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     padding: 0.2em;
-    font-size: 30pt;
+    font-size: 2.5em;
 }
 
 h2 {
@@ -48,7 +48,7 @@ h2 {
 }
 
 h4 {
-    font-style: italic;
+    /*font-style: italic;*/
     font-size: 0.7em;
     margin-top: -10px;
 }
@@ -76,6 +76,10 @@ a::before {
 a:hover::before {
 	transform-origin: left;
 	transform: scaleX(1);
+}
+
+li {
+	padding: 5px;
 }
 
 
@@ -123,12 +127,6 @@ a:hover::before {
     text-align: center;
 }
 
-.minibox {
-    position: absolute;
-    float: center;
-    width: 400px;
-}
-
 /* Row of images (for social media icons) */
 .introbox .column {
     float: right;
@@ -166,12 +164,8 @@ a:hover::before {
 }
 
 .introbuffer {
-    height: 87vh;
-    /* 94 */
-}
-
-.introbuffer-blog {
-    height: 69vh;
+    height: 91vh;
+    /* 87 */
 }
 
 .box img {
@@ -337,7 +331,7 @@ ul {
 }
 
 .page {
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 
 /* Row of images (for the project section) */
@@ -374,8 +368,9 @@ ul {
 }
 
 .text {
+	font-family: Archivo Black;
     color: white;
-    font-size: 20px;
+    font-size: 1.2em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -432,16 +427,16 @@ ul {
 }
 
 /* Title text */
-.ml1 {
+.title {
   font-size: 3.5em;
 }
 
-.ml1 .letter {
+.title .letter {
   display: inline-block;
   line-height: 1em;
 }
 
-.ml1 .text-wrapper {
+.title .text-wrapper {
   position: relative;
   display: inline-block;
   padding-top: 0.1em;
@@ -449,7 +444,7 @@ ul {
   padding-bottom: 0.15em;
 }
 
-.ml1 .line {
+.title .line {
   opacity: 0;
   position: absolute;
   left: 0;
@@ -459,5 +454,9 @@ ul {
   transform-origin: 0 0;
 }
 
-.ml1 .line1 { top: 0; border-radius: 4px; }
-.ml1 .line2 { bottom: 0; border-radius: 4px; }
+.title .line1 { top: 0; border-radius: 4px; }
+.title .line2 { bottom: 0; border-radius: 4px; }
+
+#About, #Projects, #Education, #Work, #Blog, #Contact {
+	scroll-margin-top: 4em;
+}

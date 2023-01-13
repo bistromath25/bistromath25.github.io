@@ -3,14 +3,15 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <title>bistromath25.github.io</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Courgette" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <script src="assets/js/shrinkHeader.js"></script>
         <script src="assets/js/animateTitle.js"></script>
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div id="Top"></div>
@@ -20,12 +21,16 @@
             </div>
             <div class="topbarbox right">
                 <h2><a href="assets/img/wwbrightenzhang.pdf" target="_blank">Resume</a></h2>
-            </div>
-            <div class="topbarbox right">
-                <h2><a href="https://bookshelf.bistromath25.repl.co">Bookshelf</a></h2>
-            </div>
+			</div>
+			<!--
             <div class="topbarbox right">
                 <h2><a href="#Blog">Blog</a></h2>
+            </div>-->
+            <div class="topbarbox right">
+                <h2><a href="#Work">Work</a></h2>
+            </div>
+            <div class="topbarbox right">
+                <h2><a href="#Education">Education</a></h2>
             </div>
             <div class="topbarbox right">
                 <h2><a href="#Projects">Projects</a></h2>
@@ -36,32 +41,26 @@
         </div>
         <div id="Introbox" class="introbox">
             <img src="assets/img/profiles/profilepic.jpeg" class="zoom" style="margin-top:10%;margin-bottom:15px;padding:10px;max-height:200px;position:relative;border-radius:50%;vertical-align:middle;">
-			<h1 class="ml1">
-				<span class="text-wrapper">
-					<span class="line line1"></span>
-					<span class="letters">Hello! I'm Brighten!</span>
-					<span class="line line2"></span>
-				</span>
-			</h1>
+            <h1 class="title">
+                <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters">Hello! I'm Brighten!</span>
+                <span class="line line2"></span>
+                </span>
+            </h1>
             <!--<h1 id="CHANGE_MY_COLOR" style="font-size:50px;"><a href="#">Hello! I'm Brighten!</a></h1>-->
             <h3 class="gray" style="padding-left:24%;padding-right:24%;">Welcome to my slice of the internet! I'm currently in my 1B term studying Computer Science at the University of Waterloo.</h3>
-            <!--
-			<div class="row" style="padding-top:5%;padding-left:30%;padding-right:30%;">
-                <div class="column zoom"><a href="https://www.linkedin.com/in/brighten-zhang/"><img src="assets/img/socials/linkedinlogo.png" style="width:32%;"></a></div>
-                <div class="column zoom"><a href="https://github.com/bistromath25"><img src="assets/img/socials/github-mark.png" style="width:32%;"></a></div>
-                <div class="column zoom"><a href="mailto:brightenzhang@gmail.com"><img src="assets/img/socials/mail.png" style="width:32%;"></a></div>
+            <div class="row" style="padding-top:5%;padding-left:30%;padding-right:30%;">
+                <div class="column zoom"><img src="assets/img/socials/linkedinlogo.png" style="width:32%;" onclick="location.href='https://www.linkedin.com/in/brighten-zhang/'"></div>
+                <div class="column zoom"><img src="assets/img/socials/github-mark.png" style="width:32%;" onclick="location.href='https://github.com/bistromath25'"></div>
+                <div class="column zoom"><img src="assets/img/socials/mail.png" style="width:32%;" onclick="location.href='mailto:brightenzhang@gmail.com'"></div>
             </div>
-			-->
-			<div class="row" style="padding-top:5%;padding-left:30%;padding-right:30%;">
-				<div class="column zoom"><img src="assets/img/socials/linkedinlogo.png" style="width:32%;" onclick="location.href='https://www.linkedin.com/in/brighten-zhang/'"></div>
-				<div class="column zoom"><img src="assets/img/socials/github-mark.png" style="width:32%;" onclick="location.href='https://github.com/bistromath25'"></div>
-				<div class="column zoom"><img src="assets/img/socials/mail.png" style="width:32%;" onclick="location.href='mailto:brightenzhang@gmail.com'"></div>
-			</div>
         </div>
-        <div class="introbuffer"></div>
+        <div id="Introbuffer" class="introbuffer"></div>
         <div id="page" class="page">
-            <div id="About" class="boxbuffer"></div>
-            <div class="box">
+			<!--<div id="About" class="boxbuffer"></div>-->
+			<div id="About">
+            <div class="box" style="margin-left:15%;margin-right:15%;">
                 <div class="text-align-center border-radius-10px gray zoom">
                     <h1>&bull; <a href="#About">About</a> &bull;</h1>
                 </div>
@@ -73,28 +72,25 @@
                     <p>Check out my resume <a href="assets/img/wwbrightenzhang.pdf" target=”_blank”>here</a>!</p>
                 </div>
             </div>
-            <div id="Projects" class="boxbuffer"></div>
-			<div class="bg-img">
+            <!--<div id="Projects" class="boxbuffer"></div>-->
+			<div id="Projects"></div>
+            <div class="bg-img">
             <div class="box">
                 <div class="text-align-center border-radius-10px gray zoom">
                     <h1>&bull; <a href="#Projects">Projects</a> &bull;</h1>
                 </div>
-                <!--<div class="text-align-left gray" data-aos="fade-up">
-                    <p>Here are a few of things I've been working on.</p>
-                    </div>-->
                 <div class="row hoverable" style="background-color:#94f0f1;" data-aos="fade-right">
                     <div class="column">
                         <div class="gray">
                             <h2><a href="https://github.com/bistromath25/moraband">Moraband Chess Engine</a></h2>
                             <p style="text-align:justify;">Moraband is a UCI-compatible chess engine written in C++, featuring modern search and evaluation techniques, with a legal move generator measuring over 200,000,000 nodes/second (moves/second). Developing my own chess engine was a great way to combine my passion of chess with my love of computer programming!</p>
-                            <p class="bold">Code: <a href="https://github.com/bistromath25/moraband">github.com/bistromath25/moraband</a></p>
-                            <p class="bold">Demo: <a href="https://lichess.org/@/morabandbot">lichess.org/@/morabandbot</a></p>
+                            <p><a href="https://lichess.org/@/morabandbot">Challenge Moraband!</a></p>
                         </div>
                     </div>
                     <div class="column" style="float:right" data-aos="zoom-in">
                         <img src="assets/img/projects/chess.jpeg" style="width:400px;height:300px;object-fit:cover;">
                         <div class="overlay border-radius-10px">
-                            <div class="text"><a href="https://lichess.org/@/morabandbot">Demo</a></div>
+                            <div class="text"><a href="https://lichess.org/@/morabandbot">Challenge!</a></div>
                         </div>
                     </div>
                 </div>
@@ -102,15 +98,14 @@
                     <div class="column" style="float:left" data-aos="zoom-in">
                         <img src="assets/img/projects/imgdb.PNG" style="width:400px;height:300px;object-fit:cover;">
                         <div class="overlay border-radius-10px">
-                            <div class="text"><a href="https://imgdb.bistromath25.repl.co">Demo</a></div>
+                            <div class="text"><a href="https://imgdb.bistromath25.repl.co">Upload!</a></div>
                         </div>
                     </div>
                     <div class="column">
                         <div class="gray">
                             <h2><a href="https://github.com/bistromath25/imgdb">imgdb</a></h2>
                             <p style="text-align:justify;">Built with node js (taking advantage of the <a href="https://www.npmjs.com/package/multer">multer</a> package) and hosted on <a href="https://replit.com">replit</a>, imgdb provides a straight-forward solution to storing your images online. Simply upload an image, and visit the resulting link whenever you wish to retrieve it.</p>
-                            <p class="bold">Code: <a href="https://github.com/bistromath25/imgdb">github.com/bistromath25/imgdb</a></p>
-                            <p class="bold">Demo: <a href="https://imgdb.bistromath25.repl.co">imgdb.bistromath25.repl.co</a></p>
+                            <p><a href="https://imgdb.bistromath25.repl.co">Upload an image!</a></p>
                         </div>
                     </div>
                 </div>
@@ -118,79 +113,131 @@
                     <div class="column">
                         <h2><a href="https://github.com/bistromath25/wordpredictor">wordpredictor</a></h2>
                         <div class="gray">
-                            <p style="text-align:justify;">Build a trigram language model from a given input text and predict the next word in a sentence using Python's nltk module.</p>
-                            <p class="bold">Code: <a href="https://github.com/bistromath25/wordpredictor">github.com/bistromath25/wordpredictor</a></p>
-                            <p class="bold">Demo: <a href="https://github.com/bistromath25/wordpredictor/blob/main/test.py">github.com/bistromath25/wordpredictor/blob/main/test.py</a></p>
+                            <p style="text-align:justify;">Build a trigram language model from a given input text and predict the next word in a sentence using Python's nltk module&mdash;a demonstration in Markov Chains.</p>
+                            <p><a href="https://github.com/bistromath25/wordpredictor/blob/main/test.py">Predict some words!</a></p>
                         </div>
                     </div>
                     <div class="column" style="float:right" data-aos="zoom-in">
                         <img src="assets/img/projects/wordpredictor.png" style="width:400px;height:300px;object-fit:cover;">
                         <div class="overlay border-radius-10px">
-                            <div class="text"><a href="https://github.com/bistromath25/wordpredictor/blob/main/test.py">Demo</a></div>
+                            <div class="text"><a href="https://github.com/bistromath25/wordpredictor/blob/main/test.py">Predict!</a></div>
                         </div>
                     </div>
                 </div>
-                <!--
-                    <div class="row hoverable" data-aos="fade-left">
+                <div class="row hoverable" style="background-color:#94f0f1;" data-aos="fade-left">
                     <div class="column" style="float:left" data-aos="zoom-in">
-                    <img src="assets/img/projects/bookshelf.PNG" style="width:400px;height:300px;object-fit:cover;">
-                            <div class="overlay border-radius-10px">
-                    <div class="text"><a href="https://bookshelf.bistromath25.repl.co/index.html">Demo</a></div>
-                            </div>
+                        <img src="assets/img/projects/bookshelf.PNG" style="width:400px;height:300px;object-fit:cover;">
+                        <div class="overlay border-radius-10px">
+                            <div class="text"><a href="https://bookshelf.bistromath25.repl.co/bookshelf.html">Browse!</a></div>
+                        </div>
                     </div>
                     <div class="column">
-                    <div class="gray">
-                    <h2><a href="https://bookshelf.bistromath25.repl.co/index.html">Bookshelf</a></h2>
-                    <p style="text-align:justify;">My online bookshelf, or a catalogue of my most memorable reads from recent years. One of my earlier web projects.</p>
-                    <p class="bold">Code: <a href="https://bookshelf.bistromath25.repl.co/index.html">bookshelf.bistromath25.repl.co/index.html</a></p>
-                    <p class="bold">Demo: <a href="https://bookshelf.bistromath25.repl.co/index.html">https://bookshelf.bistromath25.repl.co/index.html</a></p>
+                        <div class="gray">
+                            <h2><a href="https://bookshelf.bistromath25.repl.co/bookshelf.html">Bookshelf</a></h2>
+                            <p style="text-align:justify;">I'm an avid reader, and so naturally I created a curated collection of my thoughts and ideas about the most recent books I've read. Prospective visitors will no doubt be glad to hear I've devised a simple grading scheme in order to make the task of separating the literary cream from the literary crop extremely easy. Alternatively you may enjoy visiting my <a href="http://blog.bistromath25.repl.co">blog</a></p>
+                            <p><a href="https://bookshelf.bistromath25.repl.co/bookshelf.html">Browse my bookshelf!</a></p>
+                        </div>
                     </div>
-                    </div>
-                    </div>
-                    -->
-            </div></div>
-            <div id="Blog" class="boxbuffer"></div>
-            <div class="box">
-                <div class="text-align-center border-radius-10px gray zoom">
-                    <h1>&bull; <a href="#Blog">Blog</a> &bull;</h1>
-                </div>
-                <div class="text-align-left gray" data-aos="fade-up">
-                    <p>Coming soon, spend more gems to speed this up.</p>
                 </div>
             </div>
-            <div id="Test" class="boxbuffer"></div>
-            <div class="box">
+            </div>
+            <div id="Education"></div>
+			<div class="box" style="margin-left:15%;margin-right:15%;">
                 <div class="text-align-center border-radius-10px gray zoom">
-                    <h1>&bull; <a href="#Contact">Contact</a> &bull;</h1>
+                    <h1>&bull; <a href="#Work">Education</a> &bull;</h1>
                 </div>
                 <div class="text-align-left gray" data-aos="fade-up">
-                    <p>Find me on <a href="https://www.linkedin.com/in/brighten-zhang/">linkedin</a>, visit my <a href="https://github.com/bistromath25">github</a>, or shoot me an <a href="mailto:brightenzhang@gmail.com">email</a>... I look forward to hearing from you :p</p>
+                    <div class="row" data-aos="fade-left">
+						<div class="column">
+							<div class="gray" style="float:left;">
+								<img src="assets/img/UniversityOfWaterloo_logo_vert_rgb.png" style="width:300px;height:300px;object-fit:cover;">
+							</div>
+						</div>
+						<div class="column" style="float:right;">
+							<div class="gray">
+								<h2>University of Waterloo - Computer Science</h2>
+								<p>Currently I'm in my 1B term studying Computer Science at the University of Waterloo, with a cumulative average of 90.0/100.</p>
+								<p>I'm feeling refreshed after my winter break, eager to participate in the co-op search and find opportunities to develop myself professionally as a software engineer.</p>
+								<p>Go Warriors!</p>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+            <!--<div id="Work" class="boxbuffer"></div>-->
+            <div id="Work"></div>
+			<div class="box"  style="margin-left:15%;margin-right:15%;">
+                <div class="text-align-center border-radius-10px gray zoom">
+                    <h1>&bull; <a href="#Work">Work</a> &bull;</h1>
+                </div>
+                <div class="text-align-left gray" data-aos="fade-up">
+                    <div class="row" data-aos="fade-left">
+						<div class="column" style="float:left;">
+							<div class="gray">
+								<h2>City of Toronto &mdash; Summer Camp Counsellor</h2>
+								<p>For the summers of 2021 and 2022, I was a summer camp counsellor with the City of Toronto.</p>
+								<ul>
+									<li>Collaborated with other counsellors to design and lead engaging camp activities for young children aged 6 to 12</li>
+									<li>Fostered positive social connections between campers and eased pandemic anxiety</li>
+									<li>Maintained clear communication with parents and guardians to ensure participants’ safety and enjoyment</li>
+								</ul>
+							</div>
+						</div>
+						<div class="column">
+							<div class="gray" style="float:right;">
+								<img src="assets/img/torontologo.jpeg" style="width:300px;height:300px;object-fit:cover;border-radius:50%;">
+							</div>
+						</div>
+					</div>
+					<!--
+					<p>For the summers of 2021 and 2022, I was a summer camp counsellor with the City of Toronto, collaborating with my fellow staff members to design and lead engaging activities for children aged 6 through 12. Working as a camp counsellor during the pandemic was a remarkably challenging yet incredible rewarding experience. Many, if not all, of the camp activities I'd participated in during my childhood were impossible to organize under the social-distancing protocols; regardless, we adapted to the circumstances and were ultimately able to deliver a safe and exciting camp experience and, most importantly, help ease campers' pandemic anxiety, helping them smile and laugh when so much of the world was crying.</p>
+					<p>As I look toward my upcoming co-op term as a University of Waterloo Computer Science student, I feel thrilled at the possibilities, but also a slight sadness, as I would imagine one would feel after closing a significant chapter of one's life. My first-ever job is behind me, but I know that the skills I have gained will be with me forever.<p>
+					-->
+                </div>
+            </div>
+			<div id="Postludium">
+            <div class="box" style="margin-left:20%;margin-right:20%;">
+                <div class="text-align-center border-radius-10px gray zoom">
+                    <h1>&bull; <a href="#Postludium">Postludium</a> &bull;</h1>
+                </div>
+                <div class="text-align-left gray" data-aos="fade-up">
+                    <p>What seems like a fairy tale today may be reality tomorrow.</p><p>Here we have a fairy tale of the day after tomorrow...</p><p>The future is calling... it asks for me by name.</p>
+					<p>Find me on <a href="https://www.linkedin.com/in/brighten-zhang/">linkedin</a>, visit my <a href="https://github.com/bistromath25">github</a>, or shoot me an <a href="mailto:brightenzhang@gmail.com">email</a>... I look forward to hearing from you :p</p>
                 </div>
             </div>
             <div class="boxbuffer"></div>
-			<div class="bg-img" style="background-image:url(assets/img/mainbg3.jpg);">
-            <div class="box">
-                <div class="text-align-center gray">
-                    <h3 style="font-family:Archivo Black;">&bull; <a href="mailto:brightenzhang@gmail.com">Email me!</a> &bull;</h3>
+            <div class="bg-img" style="background-image:url(assets/img/mainbg3.jpg);">
+                <div id="Contact" class="box" style="margin-left:20%;margin-right:20%;">
                     <div class="text-align-center gray">
-                        <h4 class="gray">&copy; Brighten Zhang</h4>
+                        <div class="text-align-center gray">
+                            <!--<h4 class="gray">&copy; Brighten Zhang</h4>-->
+							<p style="font-family:'Courgette';">When given the choice between being right or being kind, choose kind - Dr. Wayne W. Dyer</p>
+                        </div>
                     </div>
                 </div>
-            </div></div>
+            </div>
         </div>
         <script type="text/javascript">
 			/*
-            $(function() {
-            	var colors = ["#94f0f1", "#0e0fed"];
-            	var colorsIdx = 0;
-            	setInterval(function() { 
-            		document.getElementById("CHANGE_MY_COLOR").style.color = colors[colorsIdx];
-            		colorsIdx = 1 - colorsIdx;
-            	}, 3000);
-            })
+			function scrollToDiv(id) {
+				const yOffset = -70; 
+				const element = document.getElementById(id);
+				const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({top: y, behavior: 'smooth'});
+			}
 			*/
-		</script>
-		<script src="assets/js/animateTitle.js"></script>
+            /*
+                     $(function() {
+                     	var colors = ["#94f0f1", "#0e0fed"];
+                     	var colorsIdx = 0;
+                     	setInterval(function() { 
+                     		document.getElementById("CHANGE_MY_COLOR").style.color = colors[colorsIdx];
+                     		colorsIdx = 1 - colorsIdx;
+                     	}, 3000);
+                     })
+            */
+        </script>
+        <script src="assets/js/animateTitle.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>AOS.init({duration:2100});</script>
     </body>
