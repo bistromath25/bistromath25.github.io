@@ -24,7 +24,15 @@ body {
     font-family: "Open Sans", serif;
     font-size: 1.8rem;
     background-color: #f5f5f5;
-    color: #0e0fed;
+    color: #2F4F4F;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
 }
 
 h1,
@@ -65,7 +73,7 @@ a::before {
     width: 100%;
     height: 0.1em;
     border-radius: 10px;
-	color: #0e0fed;
+	color: #131112;
     background-color: #0e0fed;
     bottom: 0;
     left: 0;
@@ -84,8 +92,10 @@ li {
 }
 
 #Header {
+    /*opacity: 0;*/
     transition: all 0.3s ease-in-out;
-    background-color: #F0F0F0;
+    background-color: #f5f5f5;
+    z-index: 999999;
 }
 
 #CHANGE_MY_COLOR {
@@ -111,7 +121,7 @@ li {
 .introbox {
     position: absolute;
     top: 0;
-    background-image: url(../img/mainbg3.jpg);
+    /*background-image: url(../img/mainbg3.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -330,19 +340,12 @@ ul {
     margin-left: 2em;
 }
 
-#page {
-    transition: all 0.5s ease-in-out;
-}
-
-.page {
-    padding-bottom: 2%;
-}
-
 /* Row of images (for the project section) */
 .column {
     position: relative;
-    width: auto;
-    padding: 5px;
+    /*width: auto;*/
+    width: 50%;
+    margin: 5px;
 }
 
 .row::after {
@@ -351,24 +354,14 @@ ul {
     display: table;
 }
 
-.column:hover .overlay {
-    opacity: 1;
+.column img {
+    max-height: 380px;
+    width: 100%;
+    object-fit: cover;
 }
 
-.row img {
+.row {
     border-radius: 10px;
-}
-
-.overlay {
-    position: absolute;
-    float: center;
-    top: 40%;
-    bottom: 40%;
-    left: 30%;
-    right: 30%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #94f0f1;
 }
 
 .text {
@@ -389,7 +382,7 @@ ul {
 }
 
 .hoverable:hover {
-    background-color: #F0F0F0;
+    background-color: transparent;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
     margin-bottom: 10px;
     border-radius: 10px;
@@ -404,17 +397,19 @@ ul {
 
 .zoom {
     transition: transform .2s;
+    z-index: 9;
 }
 
 .zoom:hover {
     transform: scale(1.1);
     border: none;
+    z-index: 99999;
 }
 
 /* Gradient text */
 .gradient-text {
     background-color: red;
-    background-image: linear-gradient(45deg, #0e0fed, #ffdc6a);
+    background-image: linear-gradient(45deg, #0e0fed, #94f0f1);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -425,15 +420,17 @@ ul {
 
 .gradient-bg {
     background-color: red;
-    background-image: linear-gradient(45deg, #94f0f1, #ffdc6a);
+    background-image: linear-gradient(45deg, #94f0f1, #94f0f1);
     background-size: 100%;
     background-repeat: repeat;
 }
 
 /* Title text */
 .title {
+    padding-top: 14%; /* no pad if profile image */
 	color: #131112;
-    font-size: 3.5em;
+    font-size: 6em;
+
 }
 
 .title .letter {
@@ -477,3 +474,5 @@ ul {
 #Contact {
     scroll-margin-top: 4em;
 }
+
+
