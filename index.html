@@ -16,8 +16,8 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/anime.min.js"></script>
-        <link href="assets/aos/aos.css" rel="stylesheet">
-        <script src="assets/aos/aos.js"></script>
+        <link href="assets/js/aos/aos.css" rel="stylesheet">
+        <script src="assets/js/aos/aos.js"></script>
     </head>
     <body>
         <div id="Top"></div>
@@ -29,6 +29,9 @@
                 <h2><a href="assets/img/externalresume.pdf" target="_blank">Resume</a></h2>
             </div>
             <div class="topbarbox right" data-aos="fade-left">
+                <h2><a href="https://bookshelf.bistromath25.repl.co/bookshelf.html">Bookshelf</a></h2>
+            </div>
+            <div class="topbarbox right" data-aos="fade-left">
                 <h2><a href="#Work">Work</a></h2>
             </div>
             <div class="topbarbox right" data-aos="fade-left">
@@ -38,7 +41,7 @@
                 <h2><a href="#About">About</a></h2>
             </div>
         </div>
-        <div id="Introbox" class="introbox" style="background-color:#f5f5f5;">
+        <div id="Introbox" class="introbox" style="background-color:#F0EFD1;">
             <h1 class="title no-drag">
                 <span class="text-wrapper">
                 <span class="line line1"></span>
@@ -46,7 +49,9 @@
                 <span class="line line2"></span>
             </h1>
             <div data-aos="fade-in">
-                <h3 class="gray no-drag" style="padding-left:24%;padding-right:24%;" data-aos="fade-in" data-aos-delay="700">Welcome to my slice of the internet! I'm currently studying<br>Computer Science at the University of Waterloo.</h3>
+                <h3 class="no-drag" style="padding-left:24%;padding-right:24%;color:#21180D;" data-aos="fade-in" data-aos-delay="700">
+                    Welcome to my slice of the internet! I'm currently studying<br>Computer Science at the University of Waterloo.
+                </h3>
             </div>
             <div class="row" style="padding-top:5%;padding-left:30%;padding-right:30%;">
                 <div class="column" data-aos="fade-left"><img src="assets/img/socials/linkedinlogo.png" alt="LinkedIn" class="zoom no-drag" style="width:32%;" onclick="location.href='https://www.linkedin.com/in/brighten-zhang/'"></div>
@@ -55,90 +60,86 @@
             </div>
         </div>
         <div id="Introbuffer" class="introbuffer"></div>
-        <div id="About" style="background-color:#F6F5AE;">
-            <div class="box" style="margin-left:20%;margin-right:20%;padding-top:2%;padding-bottom:2%;">
-                <div class="text-align-center border-radius-10px gray zoom">
+        <div id="About" style="background-color:#FFF;">
+            <div class="box" style="margin-left:25%;margin-right:25%;padding-top:2%;padding-bottom:2%;color:#F0EFD1;">
+                <div class="text-align-center zoom" style="color:#F0EFD1;">
                     <h1>&bull; <a href="#About">About</a> &bull;</h1>
                 </div>
                 <div style="display:flex;justify-content:center;"><img src="assets/img/profiles/profilepic.jpeg" class="zoom no-drag" style="padding:10px;max-width:240px;border-radius:50%;"></div>
-                <div class="text-align-left gradient-text" style="color:#565554;font-size:0.8em;" data-aos="fade-up">
+                <div class="text-align-left" style="color:#CFBA58;font-size:0.8em;" data-aos="fade-up">
                     <h1>Hello!</h1>
                 </div>
-                <div class="text-align-left" style="color:#565554;text-align:justify;" data-aos="fade-up">
+                <div class="text-align-left" style="color:#191919;text-align:justify;" data-aos="fade-up">
                     <p>My name is Brighten. I'm a University of Waterloo Computer Science student (class of 2027) currently in my 1B term.</p>
                     <p>I'm passionate about emerging technologies and developing cutting-edge solutions that solve real-world problems, and I'm always seeking opportunities to apply and enhance my skills by contributing to meaningful projects, learning alongside mentors and peers.</p>
                     <p>When I'm not grinding homework or bricking quizzes I enjoy playing basketball and swimming, as well as watching grass grow in real time. I also enjoy playing piano and chess.</p>
                     <p>I'm hoping to use this github page not only as a place to mark my online presence, but also as a place to learn more about developing and organizing my projects professionally. I've got a lot to learn, but with like-minded peers backing me up, I'm confident we can finally figure out how to center a div.</p>
-                    <p>Check out my resume <a style="color:#0e0fed;" href="assets/img/externalresume.pdf" target=”_blank”>here</a>!</p>
+                    <p>Check out my resume <a style="color:#131112;" href="assets/img/externalresume.pdf" target=”_blank”><b>here</b></a>!</p>
                 </div>
             </div>
         </div>
-       
-        <div id="Projects">
-            <div class="box" style="padding-top:2%;padding-bottom:2%;">
-                <div class="text-align-center border-radius-10px gray zoom">
+        <div id="Projects" style="background-color:#CFBA58;">
+            <div class="box" style="padding-top:2%;padding-bottom:2%;color:#191919;">
+                <div class="text-align-center zoom" style="color:#FFF;">
                     <h1>&bull; <a href="#Projects">Projects</a> &bull;</h1>
                 </div>
-                <div class="text-align-center gradient-text" style="font-size:0.8em;" data-aos="fade-up">
+                <div class="text-align-center" style="font-size:0.8em;color:#FFF;" data-aos="fade-up">
                     <h1>Here are a few things I've been working on.</h1>
                 </div>
                 <div class="row">
                     <div class="column hoverable zoom">
-                        <div class="gray bg-blue border-radius-10px" data-aos="fade-in">
+                        <div style="background-color:#F0EFD1;color:#21180D;border-radius:10px;" data-aos="fade-in">
                             <h2 style="font-family:&quot;Archivo Black&quot;;"><a href="https://github.com/bistromath25/moraband">Moraband Chess Engine</a></h2>
                             <img src="assets/img/projects/chess.jpeg">
                             <p style="text-align:justify;">Moraband is a UCI-compatible chess engine written in C++, featuring modern search and evaluation techniques, with a move generator measuring over 160,000,000 nodes/second (moves/second) on a single thread.</p>
-                            <p><a style="color:#0e0fed;" href="https://lichess.org/@/morabandbot">Challenge Moraband!</a></p>
+                            <p><a href="https://lichess.org/@/morabandbot"><b>Challenge Moraband!</b></a></p>
                         </div>
                     </div>
                     <div class="column hoverable zoom">
-                        <div class="gray bg-green border-radius-10px" data-aos="fade-in" data-aos-delay="100">
+                        <div style="background-color:#F5F5F5;color:#21180D;border-radius:10px;" data-aos="fade-in" data-aos-delay="100">
                             <h2 style="font-family:&quot;Archivo Black&quot;;"><a href="https://github.com/bistromath25/imgdb">imgdb</a></h2>
                             <img src="assets/img/projects/imgdb.PNG">
-                            <p style="text-align:justify;">Built with node js (taking advantage of the <a style="color:#0e0fed;" href="https://www.npmjs.com/package/multer">multer</a> package), imgdb provides a straight-forward solution to storing your images online. Simply upload an image, and visit the resulting link whenever you wish to retrieve it and share with friends!</p>
-                            <p><a style="color:#0e0fed;" href="https://imgdb.bistromath25.repl.co">Upload an image!</a></p>
+                            <p style="text-align:justify;">Built with node js (taking advantage of the <a href="https://www.npmjs.com/package/multer"><b>multer</b></a> package), imgdb provides a straight-forward solution to storing your images online. Simply upload an image, and visit the resulting link whenever you wish to retrieve it and share with friends!</p>
+                            <p><a href="https://imgdb.bistromath25.repl.co"><b>Upload an image!</b></a></p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="column hoverable zoom">
-                        <div class="gray bg-green border-radius-10px" data-aos="fade-in">
+                        <div style="background-color:#F5F5F5;color:#21180D;border-radius:10px;" data-aos="fade-in">
                             <h2 style="font-family:&quot;Archivo Black&quot;;"><a href="https://bookshelf.bistromath25.repl.co/bookshelf.html">Bookshelf</a></h2>
                             <img src="assets/img/projects/bookshelf.png">
                             <p style="text-align:justify;">I'm an avid reader, and so naturally I created a curated collection of my thoughts and ideas about the most recent books I've read. Here you'll find everything from modern young adult fiction, to ancient texts dealing with the foundations of morality.</p>
-                            <p><a style="color:#0e0fed;" href="https://bookshelf.bistromath25.repl.co/bookshelf.html">Browse my bookshelf!</a></p>
+                            <p><a href="https://bookshelf.bistromath25.repl.co/bookshelf.html"><b>Browse my bookshelf!</b></a></p>
                         </div>
                     </div>
                     <div class="column hoverable zoom">
-                        <div class="gray bg-blue border-radius-10px" data-aos="fade-in" data-aos-delay="100">
+                        <div style="background-color:#F0EFD1;color:#21180D;border-radius:10px;" data-aos="fade-in" data-aos-delay="100">
                             <h2 style="font-family:&quot;Archivo Black&quot;;"><a href="https://github.com/bistromath25/wordpredictor">wordpredictor</a></h2>
                             <img src="assets/img/projects/wordpredictor.png">
                             <p style="text-align:justify;">Build a trigram language model from a given input text and predict the next word in a sentence using Python's nltk module&mdash;a demonstration in Markov Chains. Get started with the provided example!</p>
-                            <p><a style="color:#0e0fed;" href="https://imgdb.bistromath25.repl.co">Upload an image!</a></p>
+                            <p><a href="https://imgdb.bistromath25.repl.co"><b>Upload an image!</b></a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div id="Work" style="background-color:#8bf0ba;">
+        <div id="Work" style="background-color:#FFF;">
             <div class="box" style="margin-left:15%;margin-right:15%;padding-top:2%;padding-bottom:2%;">
-                <div class="text-align-center border-radius-10px gray zoom">
+                <div class="text-align-center zoom" style="color:#CFBA58;">
                     <h1>&bull; <a href="#Work">Work</a> &bull;</h1>
                 </div>
-                <div class="text-align-left gray" data-aos="fade-right">
+                <div class="text-align-left" data-aos="fade-right">
                     <div class="row">
-                        <div class="column" style="float:right;width:auto;">
-                            <div class="gray">
-                                <h2>Relay Financial &mdash; QA Automation Engineering</h2>
-                                <p>For my first co-op term (Spring 2023, May-August) I will be joining the Relay team as a QA Automation engineer!</p>
-                                <ul>
-                                    <li>Coming soon!</li>
-                                </ul>
-                            </div>
+                        <div class="column" style="float:right;width:auto;color:#21180D;">
+                            <h2 style="color:#CFBA58;">Relay Financial &mdash; QA Automation Engineering</h2>
+                            <p>For my first co-op term (Spring 2023, May-August) I will be joining the Relay team as a QA Automation engineer!</p>
+                            <ul>
+                                <li>Coming soon!</li>
+                            </ul>
                         </div>
                         <div class="column">
-                            <div class="gray" style="float:left;width:auto;">
+                            <div style="float:left;width:auto;">
                                 <img src="assets/img/relaylogo.jpg" style="width:300px;height:300px;object-fit:cover;border-radius:50%;">
                             </div>
                         </div>
@@ -147,66 +148,45 @@
                 <div class="text-align-left gray" data-aos="fade-left">
                     <div class="row">
                         <div class="column">
-                            <div class="gray" style="float:right;width:auto;">
+                            <div style="float:right;width:auto;">
                                 <img src="assets/img/torontologo.jpeg" style="width:300px;height:300px;object-fit:cover;border-radius:50%;">
                             </div>
                         </div>
-                        <div class="column" style="float:left;width:auto;">
-                            <div class="gray">
-                                <h2>City of Toronto &mdash; Summer Camp Counsellor</h2>
-                                <p>For the summers of 2021 and 2022, I was a summer camp counsellor with the City of Toronto.</p>
-                                <ul>
-                                    <li>Collaborated with other counsellors to design and lead engaging camp activities for young children aged 6 to 12</li>
-                                    <li>Fostered positive social connections between campers and eased pandemic anxiety</li>
-                                    <li>Maintained clear communication with parents and guardians to ensure participants’ safety and enjoyment</li>
-                                </ul>
-                            </div>
+                        <div class="column" style="float:left;width:auto;color:#21180D;">
+                            <h2 style="color:#CFBA58;">City of Toronto &mdash; Summer Camp Counsellor</h2>
+                            <p>For the summers of 2021 and 2022, I was a summer camp counsellor with the City of Toronto.</p>
+                            <ul>
+                                <li>Collaborated with other counsellors to design and lead engaging camp activities for young children aged 6 to 12</li>
+                                <li>Fostered positive social connections between campers and eased pandemic anxiety</li>
+                                <li>Maintained clear communication with parents and guardians to ensure participants’ safety and enjoyment</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="Postludium" style="background-color:#F6F5AE;">
-            <div class="box" style="margin-left:15%;margin-right:15%;padding-top:2%;padding-bottom:5%;">
-                <div class="text-align-center border-radius-10px gray zoom">
-                    <h1>&bull; <a href="#Postludium">Postludium</a> &bull;</h1>
+        <div id="Contact" style="background-color:#F5F5F5;">
+            <div class="box" style="margin-left:15%;margin-right:15%;padding-top:2%;padding-bottom:2%;">
+                <div class="text-align-center zoom" style="color:#FFF;">
+                    <h1>&bull; <a href="#Contact">Contact</a> &bull;</h1>
                 </div>
-                    <div class="text-align-center" style="font-size:0.8em;" data-aos="fade-in">
-                        <h1 style="display:inline;color:#0e0fed;">Find me on</h1>
-                        <h1 style="display:inline;"><a href="https://www.linkedin.com/in/brighten-zhang/">linkedin</a></h1>
-                        <h1 style="display:inline;color:#0e0fed;">visit my</h1>
-                        <h1 style="display:inline;"><a href="https://github.com/bistromath25">github</a></h1>
-                        <h1 style="display:inline;color:#0e0fed;">or shoot me an</h1>
-                        <h1 style="display:inline;"><a href="mailto:brightenzhang@gmail.com">email</a></h1>
-                        <h1 style="display:inline;color:#0e0fed;">...<br></h1>
-                        <h1 style="display:inline;color:#0e0fed;">I look forward to hearing from you :p</h1>
-                    </div>
+                <div class="text-align-center" style="font-size:0.6em;">
+                    <h1 style="display:inline;color:#191919;">Find me on</h1>
+                    <h1 style="display:inline;"><a href="https://www.linkedin.com/in/brighten-zhang/" style="color:#CFBA58;">linkedin</a></h1>
+                    <h1 style="display:inline;color:#191919;">visit my</h1>
+                    <h1 style="display:inline;"><a href="https://github.com/bistromath25" style="color:#CFBA58;">github</a></h1>
+                    <h1 style="display:inline;color:#191919;">or shoot me an</h1>
+                    <h1 style="display:inline;"><a href="mailto:brightenzhang@gmail.com" style="color:#CFBA58;">email</a></h1>
+                    <h1 style="display:inline;color:#191919;">...<br></h1>
+                    <h1 style="display:inline;color:#191919;">I look forward to hearing from you :p</h1>
                 </div>
             </div>
         </div>
-        <!--
-            <div id="Quote1" style="background-color:#ffdc6a;">
-                <div class="box" style="margin-left:15%;margin-right:15%;padding-top:5%;padding-bottom:5%;">
-                    <div class="text-align-left gradient-text" style="color:#565554;" data-aos="fade-up">
-                        <h1>"The world isn’t just the way it is. It is how we understand it, no? And in understanding something, we bring something to it, no? Doesn’t that make life a story?"</h1>
-                        <p>Yann Martel, <i>Life of Pi</i></p>
-                    </div>
-                </div>
-            </div>
-            <div id="Quote2" style="background-color:#ffdc6a;">
-                <div class="box" style="margin-left:15%;margin-right:15%;padding-top:5%;padding-bottom:5%;">
-                    <div class="text-align-left gradient-text" style="color:#565554;" data-aos="fade-up">
-                        <h1>"Most of the gods throw dice but Fate plays chess, and you don't find out until too late that he's been using two queens all along."</h1>
-                        <p>Terry Pratchet, <i>Interesting Times</i></p>
-                    </div>
-                </div>
-            </div>
-            -->
+        </div>
         <script type="text/javascript">
             window.onscroll = function () {
                 scrollFunction();
             };
-            
             window.onscroll = function () {
                 if (document.body.scrollTop === screen.height || document.documentElement.scrollTop === 0) {
                     //document.getElementById("Header").style.opacity = 0;
@@ -214,17 +194,17 @@
                     document.getElementById("Header").style.opacity = 1;
                     document.getElementById("Header").style.padding = "0px";
                     document.getElementById("Header").style.fontSize = "0.8em";
+                    document.getElementById("Header").style.backgroundColor = "#F5F5F5";
                 } else {
                     document.getElementById("Header").style.opacity = 1;
                     document.getElementById("Header").style.padding = "10px";
                     document.getElementById("Header").style.fontSize = "1em";
+                    document.getElementById("Header").style.backgroundColor = "#FFF";
             	}
             }
-            
             // Wrap every letter in a span
             var textWrapper = document.querySelector('.title .letters');
             textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-            
             anime.timeline({loop: true})
               .add({
                 targets: '.title .letter',
@@ -250,7 +230,6 @@
                 delay: 1000
               });
               AOS.init({duration:2100});
-                 
         </script>
     </body>
 </html>
