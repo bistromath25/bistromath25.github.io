@@ -127,7 +127,7 @@ li {
 .topbarbox {
     position: relative;
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
 }
 
 .introbox {
@@ -374,4 +374,104 @@ ul {
 #Blog,
 #Contact {
     scroll-margin-top: 4em;
+}
+
+/* Form */
+form {
+    width: 100%;
+}
+
+form>div {
+    position: relative;
+}
+
+form label {
+    position: absolute;
+    font-size: 1.25rem;
+    left: 1rem;
+    pointer-events: none;
+    color: #CFBA58;
+    transition: all .22s;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+}
+
+form input {
+    width: 100%;
+    padding: 1.5rem;
+    background: #222;
+    margin: 1.25rem 0;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+form textarea {
+    width: 100%;
+    height: 130px;
+    padding: 1.5rem;
+    background: #222;
+    margin: 1.25rem 0;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+form input:focus {
+    background: #333;
+    outline: 0;
+}
+
+form textarea:focus {
+    background: #333;
+    outline: 0;
+}
+
+form input:focus+label,
+form input:hover+label,
+form input:valid+label {
+    top: 0;
+    font-size: 1.125rem;
+    transform: translateY(0);
+    left: 0;
+    z-index: 999;
+}
+
+form textarea:focus+label,
+form textarea:hover+label,
+form textarea:valid+label {
+    top: 0;
+    font-size: 1.125rem;
+    transform: translateY(0);
+    left: 0;
+    z-index: 999;
+}
+
+form .cover {
+    width: 100%;
+    position: absolute;
+    background: #222;
+    height: 4px;
+    top: 1.25rem;
+}
+
+form button {
+    width: 100%;
+    display: inline-block;
+    background-color: #CFBA58;
+    color: #111;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+    margin: 1.25rem 0;
+    padding: 1.2rem;
+    transition: all 0.22s;
+}
+
+form button:hover {
+    background-color: #FFF;
+    color: #CFBA58;
 }
