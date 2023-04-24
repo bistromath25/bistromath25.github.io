@@ -14,7 +14,6 @@ body {
     font-family: "Open Sans", serif;
     font-size: 1.8rem;
     background-color: #FFF;
-    /*F2F3F4*/
     color: #2F4F4F;
 
     -moz-user-select: none;
@@ -100,26 +99,25 @@ a:hover::before {
     transform: scaleX(1);
 }
 
+ul {
+    list-style-position: inside;
+    margin-left: 2em;
+}
+
 li {
     padding: 5px;
 }
 
 #Header {
-    /*opacity: 0;*/
     transition: all 0.3s ease-in-out;
     background-color: #FFF;
     z-index: 999999;
 }
 
-#CHANGE_MY_COLOR {
-    transition: color 3s ease-in-out;
-}
-
 .topbar {
     position: sticky;
     top: 0;
-    padding: 10px;
-    /*border-bottom: 1px solid #0e0fed;*/
+    padding: 5px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
     z-index: 9999;
 }
@@ -127,20 +125,19 @@ li {
 .topbarbox {
     position: relative;
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
 }
 
 .introbox {
     position: absolute;
     top: 0;
-    /*background-image: url(../img/mainbg3.jpg);*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    transition: all 1s;
     width: 100%;
     height: 100%;
     z-index: 999;
     text-align: center;
+    clip-path: circle(50% at center);
+    transition: all 0.22s linear;
 }
 
 /* Row of images (for social media icons) */
@@ -156,45 +153,9 @@ li {
     display: table;
 }
 
-.box {
-    position: relative;
-    padding: 0% 1% 0% 1%;
-    margin: 0% 10% 0% 10%;
-    background-color: transparent;
-}
-
-.boxbuffer {
-    height: 6vh;
-    background-color: transparent;
-}
-
 .introbuffer {
     height: 91vh;
     /* 87 */
-}
-
-.box img {
-    width: 100%;
-    padding: 15px;
-}
-
-.border-radius-10px {
-    border-radius: 10px;
-}
-
-.bottom-border-radius-10px {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.shadow-small {
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-.fullscreen {
-    height: 100%;
 }
 
 .text-align-center {
@@ -245,12 +206,12 @@ li {
     margin-bottom: 10px;
 }
 
-ul {
-    list-style-position: inside;
-    margin-left: 2em;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-/* Row of images (for the project section) */
 .column {
     position: relative;
     /*width: auto;*/
@@ -259,29 +220,10 @@ ul {
     margin: 5px;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .column img {
     max-height: 300px;
     width: 100%;
     object-fit: cover;
-}
-
-.text {
-    font-family: Archivo Black;
-    color: white;
-    font-size: 1.2em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .hoverable {
@@ -306,32 +248,11 @@ ul {
     z-index: 99999;
 }
 
-/* Gradient text */
-.gradient-text {
-    background-color: red;
-    background-image: linear-gradient(45deg, #0e0fed, #94f0f1);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-}
-
-.gradient-bg {
-    background-color: red;
-    background-image: linear-gradient(45deg, #94f0f1, #94f0f1);
-    background-size: 100%;
-    background-repeat: repeat;
-}
-
 /* Title text */
 .title {
-    padding-top: 14%;
-    /* no pad if profile image */
+    padding-top: 16%;
     color: #191919;
-    font-size: 6em;
-
+    font-size: 5em;
 }
 
 .title .letter {
@@ -345,26 +266,6 @@ ul {
     padding-top: 0.1em;
     padding-right: 0.05em;
     padding-bottom: 0.15em;
-}
-
-.title .line {
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    height: 0.1em;
-    width: 100%;
-    background-color: #191919;
-    transform-origin: 0 0;
-}
-
-.title .line1 {
-    top: 0;
-    border-radius: 4px;
-}
-
-.title .line2 {
-    bottom: 0;
-    border-radius: 4px;
 }
 
 #About,
@@ -474,4 +375,5 @@ form button {
 form button:hover {
     background-color: #FFF;
     color: #CFBA58;
+    cursor: pointer;
 }
