@@ -118,7 +118,7 @@ li {
     position: sticky;
     top: 0;
     padding: 5px;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px 0 rgba(190, 190, 190, 0.3);
     z-index: 9999;
 }
 
@@ -126,36 +126,6 @@ li {
     position: relative;
     display: inline-block;
     padding: 5px;
-}
-
-.introbox {
-    position: absolute;
-    top: 0;
-    transition: all 1s;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    text-align: center;
-    clip-path: circle(50% at center);
-    transition: all 0.22s linear;
-}
-
-/* Row of images (for social media icons) */
-.introbox .column {
-    float: right;
-    width: 33.3%;
-    padding: 5px;
-}
-
-.introbox .row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.introbuffer {
-    height: 91vh;
-    /* 87 */
 }
 
 .text-align-center {
@@ -232,7 +202,7 @@ li {
 
 .hoverable:hover {
     background-color: transparent;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px 0 rgba(190, 190, 190, 0.3);
     margin-bottom: 10px;
     border-radius: 10px;
 }
@@ -250,9 +220,8 @@ li {
 
 /* Title text */
 .title {
-    padding-top: 16%;
     color: #191919;
-    font-size: 5em;
+    font-size: 3em;
 }
 
 .title .letter {
