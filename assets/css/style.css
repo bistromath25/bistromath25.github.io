@@ -112,6 +112,7 @@ li {
     transition: all 0.3s ease-in-out;
     background-color: #FFF;
     z-index: 999999;
+    background: rgba(256, 256, 256, 0.5);
 }
 
 .topbar {
