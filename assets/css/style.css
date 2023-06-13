@@ -112,7 +112,6 @@ li {
     transition: all 0.3s ease-in-out;
     background-color: #FFF;
     z-index: 999999;
-    background: rgba(256, 256, 256, 0.5);
 }
 
 .topbar {
@@ -238,6 +237,38 @@ li {
     padding-bottom: 0.15em;
 }
 
+.animated-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated-title h1 {
+    margin: 0;
+    font-size: 6em;
+    color: rgba(225,225,225, .01);
+    background-image: url("../img/codebg.png");
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+}
+
+@keyframes animate {
+    0%, 100% {
+        background-position: left top;
+    }
+    25% {
+        background-position: right bottom;
+    }
+    50% {
+        background-position: left bottom;
+    }
+    75% {
+        background-position: right top;
+    }   
+}
+
 #About,
 #Projects,
 #Education,
@@ -346,4 +377,20 @@ form button:hover {
     background-color: #FFF;
     color: #CFBA58;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    .topbar .topbarbox {
+        visibility: hidden;
+        width: 0;
+    }
+    #LOGO {
+        visibility: visible;
+    }
+    .resp {
+        display: block;
+    }
+    .column {
+        width: 100%;
+    }
 }
