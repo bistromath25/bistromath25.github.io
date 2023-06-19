@@ -245,13 +245,18 @@ li {
 
 .animated-title h1 {
     margin: 0;
+    padding-top: 0;
     font-size: 6em;
-    color: rgba(225,225,225, .01);
+    color: rgba(225,225,225, 0.01);
     background-image: url("../img/codebg.png");
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     -webkit-background-clip:text;
     animation: animate 15s ease-in-out infinite;
     text-align: center;
+}
+
+.subtitle {
+    margin-top: -25px;
 }
 
 @keyframes animate {
@@ -293,7 +298,7 @@ form label {
     left: 1rem;
     pointer-events: none;
     color: #CFBA58;
-    transition: all .22s;
+    transition: all 0.22s;
     top: 50%;
     transform: translateY(-50%);
     display: block;
@@ -383,9 +388,12 @@ form button:hover {
     .topbar .topbarbox {
         visibility: hidden;
         width: 0;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
     }
-    #LOGO {
-        visibility: visible;
+    .animated-title h1 {
+        font-size: 4em;
     }
     .resp {
         display: block;
