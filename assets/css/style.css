@@ -453,7 +453,10 @@ section {
 .projects .col .project.bookshelf {
 	background-image: url('../img/projects/bookshelf.png');
 }
-*/
+
+.projects .col .project.blog {
+	background-image: url('../img/projects/blog.png');
+}
 
 .contact {
 	gap: 16px;
@@ -517,6 +520,15 @@ section {
 	.projects .col .project {
 		width: calc(84vw - 36px);
 		height: calc(84vw - 36px);
+	}
+
+	.projects .col .img-overlay-text {
+		top: 25%;
+		left: 25%;
+		-webkit-transform: translate(-25%, -25%);
+		-ms-transform: translate(-25%, -25%);
+		transform: translate(-25%, -25%);
+		/*text-align: justify;*/
 	}
 
 	.side.x {
