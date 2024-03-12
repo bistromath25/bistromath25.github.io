@@ -454,6 +454,10 @@ section {
 	background-image: url('../img/projects/bookshelf.png');
 }
 
+.projects .col .project.coming-soon {
+	background-color: var(--project-background);
+}
+
 .projects .col .project.blog {
 	background-image: url('../img/projects/blog.png');
 }
@@ -498,7 +502,8 @@ section {
 		top: 8vw;
 		left: 8vw;
 		width: calc(84vw);
-		border-radius: 4vw;
+		border: none;
+		/*border-radius: 4vw;*/
 		height: calc(100dvh - 16vw);
 	}
 
@@ -532,16 +537,19 @@ section {
 	}
 
 	.side.x {
+		display: none;
 		width: 8vw;
 	}
 
 	.side.y {
+		display: none;
 		height: 8vw;
 	}
 
 	nav {
+		/*display: none;*/
 		top: auto;
-		bottom: clamp(32px, 12vw, 64px);
+		bottom: min(32px, 12vw);
 		margin-top: auto;
 		position: fixed !important;
 		animation-name: animate-in-nav;
@@ -557,7 +565,7 @@ section {
 		100% {
 			opacity: 1;
 			transform: scale(1.05);
-			bottom: clamp(32px, 12vw, 64px);
+			bottom: min(32px, 12vw);
 		}
 	}
 
