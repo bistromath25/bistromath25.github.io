@@ -10,7 +10,7 @@
 	--foreground-1: #131112;
 	--foreground-3: #696969;
 
-	--nav-background: #e2e2e2; /*8AF3FF light blue*/
+	--nav-background: #e2e2e2;
 	--nav-border: #696969;
 	
 	--nav-link-hover: #e5e5e5;
@@ -21,6 +21,8 @@
 	--project-shadow-light: rgb(0 0 0 / 4%);
     --project-text-light: #f5f5f5;
     --project-text-dark: #131112;
+
+	--light-blue: #8af3ff;
 }
 
 .animate-in {
@@ -330,6 +332,43 @@ section {
 	align-items: center;
 }
 
+.title {
+	display: flex;
+}
+
+.title h1 {
+	position: relative;
+	font-size: 80px;
+	/* color: var(--page-background); */
+	color: transparent;
+	-webkit-text-stroke: 1px var(--foreground-1);
+}
+
+.title h1::before {
+	content: attr(data-content);
+	position: absolute;
+	text-shadow: none;
+}
+
+.title:hover h1::before {
+	transition: 0.6s ease;
+	animation: zoom-out 0.6s ease forwards;
+}
+
+@keyframes zoom-out {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2);
+	}
+}
+
 .home {
 	display: flex;
 	flex-direction: column;
@@ -351,7 +390,7 @@ section {
 	padding: 8px;
 	margin-bottom: 16px;
 	max-width: 250px;
-	border: 1px var(--foreground-3) dashed;
+	border: 1px var(--light-blue) dashed;
 }
 
 .about .text {
@@ -510,6 +549,10 @@ section {
 	section {
 		padding: 8vw;
 		width: calc(100% - 16vw);
+	}
+
+	.title h1 {
+		font-size: 40px;
 	}
 
 	.projects {
