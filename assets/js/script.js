@@ -10,7 +10,6 @@ window.addEventListener("scroll", function () {
     const verticalScrollRatio = Math.abs(window.scrollY / screenHeight);
     const aboutSectionCirclePercent = Math.min(90, verticalScrollRatio * 60);
     aboutSection.style.clipPath = `circle(${aboutSectionCirclePercent}% at center)`;
-    aboutSection.style.backgroundImage = "linear-gradient(var(--page-background), var(--light-blue), var(--page-background))";
 });
 
 window.addEventListener("resize", function () {

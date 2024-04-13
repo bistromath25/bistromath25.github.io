@@ -414,7 +414,6 @@ section {
 
 .about {
     flex-direction: column;
-    /* background-color: var(--light-blue); */
 }
 
 .about img {
