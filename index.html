@@ -1,111 +1,113 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>bistromath25.github.io</title>
-    <meta property="og:title" content="bistromath25.github.io">
-    <meta property="og:type" content="profile">
-    <meta property="og:url" content="http://bistromath25.github.io">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/71907421?v=4">
-    <meta property="og:description" content="Brighten Zhang's personal website">
-    <meta property="og:site_name" content="bistromath25.github.io">
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body class="" id="body">
-	<main>
-		<div class="side y top"></div>
-		<div class="side x right"></div>
-		<div class="side y bottom"></div>
-		<div class="side x left"></div>
-
-		<div class="nav-wrapper">
-			<nav class="navigation" style="--animation-order:3;">
-				<ul>
-					<li class="">
-						<a href="#about">About</a>
-					</li>
-					<div class="line"></div>
-					<li class="">
-						<a href="#projects">Projects</a>
-					</li>
-					<div class="line"></div>
-					<li class="">
-						<a href="#contact">Contact</a>
-					</li>
-                    <div class="line"></div>
-					<li class="">
-						<a href="assets/img/externalresume.pdf">Resume</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-
-		<section class="home" id="home">
-            <div class="animate-in title" style="--animation-order:1;">
-                <h1 data-content="Hey! I'm Brighten">Hey! <span style="color: var(--light-blue);">I'm Brighten</span></h1>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>bistromath25.github.io</title>
+        <meta property="og:title" content="bistromath25.github.io">
+        <meta property="og:type" content="profile">
+        <meta property="og:url" content="http://bistromath25.github.io">
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/71907421?v=4">
+        <meta property="og:description" content="Brighten Zhang's personal website">
+        <meta property="og:site_name" content="bistromath25.github.io">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body class="" id="body" onload="initKnightsTour();">
+        <main>
+            <div class="side y top"></div>
+            <div class="side x right"></div>
+            <div class="side y bottom"></div>
+            <div class="side x left"></div>
+            <div class="nav-wrapper">
+                <nav class="navigation" style="--animation-order:3;">
+                    <ul>
+                        <li class="">
+                            <a href="#about">About</a>
+                        </li>
+                        <div class="line"></div>
+                        <li class="">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <div class="line"></div>
+                        <li class="">
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <div class="line"></div>
+                        <li class="">
+                            <a href="assets/img/externalresume.pdf">Resume</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <!-- <h1 style="--animation-order:1;" class="animate-in title">Hey! <span style="color: var(--light-blue);">I'm Brighten</span></h1> -->
-			<p style="--animation-order:2;" class="animate-in">Welcome to my slice of the internet!</p>
-		</section>
-
-		<section class="about" id="about">
-			<div id="headshot" class="headshot">
-                <img src="assets/img/profiles/profilepic.jpeg">
-            </div>
-            <div class="text">
-				<p>Hey, I'm Brighten! I'm in my second year of studying computer science at the University of Waterloo.</p>
-                <p>When I'm not grinding homework or bricking quizzes I enjoy playing basketball and swimming, as well as watching grass grow in real time. I also enjoy playing piano and chess.</p>
-                <p>Currently I'm on coop as a Full Stack Engineer at Relay Financial!</p>
-                <p>Check out my resume <a href="assets/img/externalresume.pdf">here</a>!</p>
-            </div>
-		</section>
-
-		<section class="projects" id="projects">
-            <div class="col">
-                <div class="project moraband">
-                    <div class="img-overlay">
-                        <div class="img-overlay-text">
-                            <h2>Moraband</h2>
-                            <p><br>UCI chess engine written in C++, in active development since December 2022.</p>
-                            <p><br><a href="https://github.com/bistromath25/moraband" target="_blank">Challenge Moraband!</a></p>
+            <section class="home" id="home">
+                <div class="animate-in title" style="--animation-order:1;">
+                    <h1 data-content="Hey! I'm Brighten"><span style="color: var(--white);">Hey!</span> <span style="color: var(--light-blue);">I'm Brighten</span></h1>
+                </div>
+                <!-- <h1 style="--animation-order:1;" class="animate-in title">Hey! <span style="color: var(--light-blue);">I'm Brighten</span></h1> -->
+                <div class="animate-in subtitle" style="--animation-order:2;">
+                    <h2>Welcome to my slice of the internet!</h2>
+                </div>
+                <!-- <p style="--animation-order:2;" class="animate-in">Welcome to my slice of the internet!</p> -->
+                <div id="knightstour" style="--animation-order:0.5; position: fixed; padding-top: calc((100vh - 500px + 40px) / 2);" class="animate-in"></div>
+            </section>
+            <section class="about" id="about">
+                <div class="headshot-container">
+                    <img id="headshot" src="assets/img/profiles/profilepic.jpeg">
+                </div>
+                <div class="text">
+                    <p>Hey, I'm Brighten! I'm in my second year of studying computer science at the University of Waterloo.</p>
+                    <p>When I'm not grinding homework or bricking quizzes I enjoy playing basketball and swimming, as well as watching grass grow in real time. I also enjoy playing piano and chess.</p>
+                    <p>Currently I'm on coop as a Full Stack Engineer at Relay Financial!</p>
+                    <p>Check out my resume <a href="assets/img/externalresume.pdf">here</a>!</p>
+                </div>
+            </section>
+            <!-- <section class="knightstour" id="knightstour" style="min-height: 20vh;"></section> -->
+            <section class="projects" id="projects">
+                <div class="col">
+                    <div class="project moraband">
+                        <div class="img-overlay">
+                            <div class="img-overlay-text">
+                                <h2>Moraband</h2>
+                                <p><br>UCI chess engine written in C++, in active development since December 2022.</p>
+                                <p><br><a href="https://github.com/bistromath25/moraband" target="_blank">Challenge Moraband!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project wordpredictor">
+                        <div class="img-overlay">
+                            <div class="img-overlay-text">
+                                <h2>wordpredictor</h2>
+                                <p><br>Trigram language model based on Markov chains using Python's nltk module.</p>
+                                <p><br><a href="https://github.com/bistromath25/wordpredictor" target="_blank">Predict some words!</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project wordpredictor">
-                    <div class="img-overlay">
+                <div class="col">
+                    <div class="project imgdb">
+                        <div class="img-overlay">
+                            <div class="img-overlay-text">
+                                <h2>imgdb</h2>
+                                <p><br>Simple, lightweight Node js image hosting web application.</p>
+                                <p><br><a href="https://github.com/bistromath25/imgdb" target="_blank">Upload an image!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project coming-soon">
                         <div class="img-overlay-text">
-                            <h2>wordpredictor</h2>
-                            <p><br>Trigram language model based on Markov chains using Python's nltk module.</p>
-                            <p><br><a href="https://github.com/bistromath25/wordpredictor" target="_blank">Predict some words!</a></p>
+                            <h2>Coming soon...</h2>
+                            <p><br>Coming soon...</p>
+                            <p><br><a href="">Stay tuned!</a></p>
                         </div>
                     </div>
                 </div>
-			</div>
-			<div class="col">
-                <div class="project imgdb">
-                    <div class="img-overlay">
-                        <div class="img-overlay-text">
-                            <h2>imgdb</h2>
-                            <p><br>Simple, lightweight Node js image hosting web application.</p>
-                            <p><br><a href="https://github.com/bistromath25/imgdb" target="_blank">Upload an image!</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project coming-soon">
-                    <div class="img-overlay-text">
-                        <h2>Coming soon...</h2>
-                        <p><br>Coming soon...</p>
-                        <p><br><a href="">Stay tuned!</a></p>
-                    </div>
-                </div>
-			</div>
-		</section>
-
-		<section class="contact" id="contact">
-            <p>Find me on <a href="https://www.linkedin.com/in/brighten-zhang/">linkedin</a>, visit my <a href="https://github.com/bistromath25">github</a>, or shoot me an <a href="mailto:brightenzhang@gmail.com">email</a> ...<br>I look forward to hearing from you &#128513;</p>
-		</section>
-	</main>
-</body>
+            </section>
+            <section class="contact" id="contact">
+                <p>Find me on <a href="https://www.linkedin.com/in/brighten-zhang/">linkedin</a>, visit my <a href="https://github.com/bistromath25">github</a>, or shoot me an <a href="mailto:brightenzhang@gmail.com">email</a> ...<br>I look forward to hearing from you &#128513;</p>
+            </section>
+        </main>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <script type="text/javascript" src="assets/js/knightstour.js"></script>
+    </body>
 </html>
