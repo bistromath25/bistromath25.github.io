@@ -62,7 +62,7 @@ drawBoard = () => {
 	if (tourPath.length) {
 		const s = step >> 1;
 		ctx.lineWidth = 4;
-		ctx.fillStyle = "#f5f5f5";
+		ctx.fillStyle = "#ffffff";
 		ctx.beginPath();
 		ctx.moveTo(step * knightPos.x + s, step * knightPos.y + s);
 		let a, b, v = tourPath.length - 1;
@@ -70,7 +70,7 @@ drawBoard = () => {
 			a = tourPath[v].pos.x * step + s;
 			b = tourPath[v].pos.y * step + s;
 			ctx.lineTo(a, b);
-			ctx.strokeStyle = "#131112";
+			ctx.strokeStyle = "#000000";
 			ctx.stroke();
 			ctx.roundRect(a - 5, b - 5, 10, 10, 5);
 		}
@@ -159,7 +159,7 @@ startTour = () => {
 		}
 		drawBoard();
 		const ft = step - (step >> 3);
-		ctx.fillStyle = "#131112";
+		ctx.fillStyle = "#000000";
 		ctx.fillText(knightChar, knightPos.x * step, knightPos.y * step + ft);
 		if (moves.length < 1) {
 			if (jumps === boardSize * boardSize) {
