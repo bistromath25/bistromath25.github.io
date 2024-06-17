@@ -2,15 +2,14 @@
     margin: 0;
     color: var(--foreground-1);
     transition: background 300ms ease-out, color 300ms ease-out;
-    --page-background: #f5f5f5;
-
-    --border-background: #rgb(245, 245, 245, 0.9);
-    --border-background-alt: #f5f5f5;
+    --page-background: #eafffd;
+    --border-background: rgb(234, 255, 253, 0.2);
+    --border-background-alt: #eafffd;
 
     --foreground-1: #131112;
     --foreground-3: #696969;
 
-    --nav-background: #e2e2e2;
+    --nav-background: #eafffd;
     --nav-border: #696969;
 
     --nav-link-hover: #e5e5e5;
@@ -19,7 +18,7 @@
     --project-border: rgba(0 0 0 / 5.5%);
     --project-shadow-hover: rgb(0 0 0 / 16%);
     --project-shadow-light: rgb(0 0 0 / 4%);
-    --project-text-light: #f5f5f5;
+    --project-text-light: #eafffd;
     --project-text-dark: #131112;
 
     --light-blue: #8af3ff;
@@ -112,6 +111,8 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 main::after {
@@ -286,7 +287,7 @@ nav a {
     padding-bottom: 1px;
     border-bottom: none;
     padding: 4px 12px;
-    transition: color 300ms ease-out, background 300ms ease-out, transform 300ms ease-out;
+    transition: color 300ms ease-out, transform 300ms ease-out;
     text-decoration: none;
     border-radius: 4px;
     height: 32px;
@@ -297,7 +298,6 @@ nav a {
 @media (hover: hover) {
     nav a:hover {
         color: var(--foreground-1);
-        background: var(--nav-link-hover);
     }
 }
 
@@ -353,20 +353,18 @@ section {
 .title h1 {
     position: relative;
     font-size: 100px;
-    /* color: var(--page-background); */
-    color: transparent;
+    color: var(--light-blue);
     -webkit-text-stroke: 1px var(--foreground-1);
 }
 
-.title h1::before {
-    content: attr(data-content);
-    position: absolute;
-    text-shadow: none;
+.title-hover {
+    transition: background-color 300ms ease-in-out;
 }
 
-.title:hover h1::before {
-    transition: 0.6s ease;
-    animation: zoom-out 0.6s ease forwards;
+.title-hover:hover {
+    background-color: var(--light-blue);
+    -webkit-text-stroke: 2px var(--white);
+    border-radius: 24px;
 }
 
 .subtitle {
@@ -553,6 +551,32 @@ section {
     color: var(--foreground-3);
 }
 
+.gallery {
+    display: grid;
+    gap: 0;
+    width: 100vw;
+    height: 400px;
+    grid-template-columns: repeat(3, auto);
+    border-radius: 10px;
+}
+
+.gallery>img {
+    width: 0;
+    height: 0;
+    min-height: 400px;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .35s ease-in-out;
+}
+
+.gallery img:hover {
+    filter: grayscale(0);
+    width: calc(100vh * 0.4);
+    /* height: calc(100vw * 0.8 / 3); */
+}
+
 @media only screen and (min-width: 1200px) {
     main {
         max-width: 1200px;
@@ -569,102 +593,6 @@ section {
     .projects .col .project {
         width: 556px;
         height: 556px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    main::after {
-        top: 8vw;
-        left: 8vw;
-        width: calc(84vw);
-        border: none;
-        height: calc(100dvh - 16vw);
-    }
-
-    section {
-        padding: 8vw;
-        width: calc(100% - 16vw);
-    }
-
-    .title h1 {
-        font-size: 40px;
-    }
-
-    .title h1::before {
-        display: none;
-    }
-
-    .subtitle h2 {
-        font-size: 15px;
-        color: var(--foreground-1);
-        -webkit-text-stroke: 1px var(--foreground-1);
-    }
-
-    .projects {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .projects .col {
-        width: 100%;
-        align-items: center;
-    }
-
-    .projects .col .project {
-        width: calc(84vw - 36px);
-        height: calc(84vw - 36px);
-    }
-
-    .projects .col .img-overlay-text {
-        top: 25%;
-        left: 25%;
-        -webkit-transform: translate(-25%, -25%);
-        -ms-transform: translate(-25%, -25%);
-        transform: translate(-25%, -25%);
-        /*text-align: justify;*/
-    }
-
-    .side.x {
-        display: none;
-        width: 8vw;
-    }
-
-    .side.y {
-        display: none;
-        height: 8vw;
-    }
-
-    nav {
-        top: min(32px, 12vw);
-        position: fixed !important;
-        animation-name: animate-in-nav;
-    }
-
-    @keyframes animate-in-nav {
-        0% {
-            opacity: 0;
-            transform: scale(1);
-            top: -64px;
-        }
-
-        100% {
-            opacity: 1;
-            transform: scale(1.05);
-            top: min(32px, 12vw);
-        }
-    }
-
-    nav ul {
-        gap: 4px;
-    }
-
-    nav a {
-        padding: 4px 8px
-    }
-
-    .about .text,
-    .contact p {
-        max-width: calc(100% - 32px);
     }
 }
 
@@ -686,14 +614,10 @@ section {
         font-size: 40px;
     }
 
-    .title h1::before {
-        display: none;
-    }
-
     .subtitle h2 {
-        font-size: 15px;
+        font-size: 16px;
         color: var(--foreground-1);
-        -webkit-text-stroke: 1px var(--foreground-1);
+        -webkit-text-stroke: none
     }
 
     .projects {
