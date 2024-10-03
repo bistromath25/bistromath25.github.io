@@ -20,7 +20,26 @@
             <div class="side y bottom"></div>
             <div class="side x left"></div>
             <div class="nav-wrapper">
-                <nav class="navigation" style="--animation-order:3;">
+                <nav class="navigation lg" style="--animation-order:3;">
+                    <ul>
+                        <li class="">
+                            <a href="#about">About</a>
+                        </li>
+                        <div class="line"></div>
+                        <li class="">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <div class="line"></div>
+                        <li class="">
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <div class="line"></div>
+                        <li class="">
+                            <a href="assets/img/externalresume-gh.pdf">Resume</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="navigation nlg" style="--animation-order:3; padding: 8px; border: 1px solid var(--nav-border); box-shadow: 2px 2px var(--foreground-3);">
                     <ul>
                         <li class="">
                             <a href="#about">About</a>
@@ -42,10 +61,12 @@
             </div>
             <section class="home" id="home"">
                 <div class="animate-in title" style="--animation-order:1;">
-                    <h1 data-content="Hey! I'm Brighten"><span style="color: var(--foreground-1);">Hey!</span> <span class="title-hover" style="color: var(--light-blue); border-radius: 16px;">I'm Brighten</span></h1>
+                    <h1 class="lg" data-content="Hey! I'm Brighten"><span style="color: var(--foreground-1);">Hey!</span> <span style="color: var(--light-blue);">I'm Brighten</span></h1>
+                    <h1 class="nlg" data-content="Hey! I'm Brighten"><span style="color: var(--foreground-1); text-shadow: 2px 2px var(--foreground-3);">Hey!</span> <span style="color: var(--light-blue); text-shadow: 2px 2px var(--foreground-3);">I'm Brighten</span></h1>
                 </div>
                 <div class="animate-in subtitle" style="--animation-order:2;">
-                    <h2>I'm studying <span style="color: var(--foreground-1); text-decoration: underline 3px solid var(--foreground-1); text-underline-offset: 5px;">computer science</span><br>at the <span style="color: var(--foreground-1); text-decoration: underline 3px solid var(--foreground-1); text-underline-offset: 5px;">University of Waterloo</span></h2>
+                    <h2 class="lg">I'm studying <span style="color: var(--light-blue);">computer science</span><br>at the <span style="color: var(--light-blue);">University of Waterloo</span></h2>
+                    <h2 class="nlg">I'm studying computer science<br>at the University of Waterloo</h2>
                 </div>
                 <div id="knightstour" style="--animation-order:0.5; position: fixed; padding-top: calc((100vh - 500px + 40px) / 2);" class="animate-in"></div>
                 <div style="background: rgba(234, 255, 253, 0.7); position: fixed; padding-top: calc((100vh - 500px + 40px) / 2); height: 100%; width: 100%; z-index: 1;"></div>
@@ -54,54 +75,113 @@
                 <div class="headshot-container">
                     <img id="headshot" src="assets/img/profiles/headshot2.jpg">
                 </div>
-                <div class="text">
-                    <p>Hey, I'm Brighten! I'm in my second year of studying computer science at the University of Waterloo.</p>
-                    <p>When I'm not grinding homework or bricking quizzes I enjoy playing basketball and swimming, as well as watching grass grow in real time. I also enjoy playing piano and chess.</p>
-                    <p>Currently I'm on coop as a Full Stack Engineer at Relay Financial!</p>
+                <div class="text lg">
+                    <p >Hey, I'm Brighten! I'm studying computer science at the University of Waterloo.</p>
+                    <p>When I'm not grinding homework or bricking quizzes I enjoy playing basketball, soccer, and swimming, as well as watching grass grow in real time. I also enjoy playing piano and chess.</p>
+                </div>
+                <div class="text nlg" style="padding: 8px; border-radius: 20px; border: 1px solid var(--nav-border); box-shadow: 2px 2px var(--foreground-3);">
+                    <p>Hey, I'm Brighten! I'm studying computer science at the University of Waterloo.</p>
                 </div>
             </section>
-            <section class="projects" id="projects">
-                <div class="col">
-                    <div class="project moraband">
-                        <div class="img-overlay">
-                            <div class="img-overlay-text">
-                                <h2>Moraband</h2>
-                                <p><br>UCI chess engine written in C++, in active development since December 2022.</p>
-                                <p><br><a href="https://github.com/bistromath25/moraband" target="_blank">Challenge Moraband!</a></p>
+            <section id="projects">
+                <div class="projects nlg">
+                    <div class="col">
+                        <div class="project moraband">
+                            <div class="img-overlay">
+                                <div class="img-overlay-text">
+                                    <h2>Moraband</h2>
+                                    <p><br>UCI chess engine in C++. Active development since December 2022.</p>
+                                    <p><br><a href="https://github.com/bistromath25/moraband" target="_blank">Challenge Moraband!</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project phobos">
+                            <div class="img-overlay">
+                                <div class="img-overlay-text">
+                                    <h2>Phobos</h2>
+                                    <p><br>Create collaborative, real-time secrets anywhere, anytime!</p>
+                                    <p><br><a href="https://phbs.vercel.app/" target="_blank">Share a secret!</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="project wordpredictor">
-                        <div class="img-overlay">
-                            <div class="img-overlay-text">
-                                <h2>wordpredictor</h2>
-                                <p><br>Trigram language model based on Markov chains using Python's nltk module.</p>
-                                <p><br><a href="https://github.com/bistromath25/wordpredictor" target="_blank">Predict some words!</a></p>
+                    <div class="col">
+                        <div class="project wordpredictor">
+                            <div class="img-overlay">
+                                <div class="img-overlay-text">
+                                    <h2>wordpredictor</h2>
+                                    <p><br>Trigram language model based on Markov chains using Python's nltk module.</p>
+                                    <p><br><a href="https://github.com/bistromath25/wordpredictor" target="_blank">Predict some words!</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project imgdb">
+                            <div class="img-overlay">
+                                <div class="img-overlay-text">
+                                    <h2>imgdb</h2>
+                                    <p><br>Simple, lightweight Node.js image hosting web application.</p>
+                                    <p><br><a href="https://github.com/bistromath25/imgdb" target="_blank">Upload an image!</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="project imgdb">
-                        <div class="img-overlay">
-                            <div class="img-overlay-text">
-                                <h2>imgdb</h2>
-                                <p><br>Simple, lightweight Node js image hosting web application.</p>
-                                <p><br><a href="https://github.com/bistromath25/imgdb" target="_blank">Upload an image!</a></p>
+                <div class="lg" style="width: 100%;">
+                    <ul class="project-cards" style="padding: 0px;">
+                        <li class="project-card" id="project-card-1">
+                            <div class="project-card-content" style="display: flex;">
+                                <div class="project-card-img moraband" style="flex: 50%;"></div>
+                                <div style="flex: 50%;">
+                                    <div style="padding: 20px;">
+                                        <h2>Moraband Chess Engine</h2>
+                                        <p>UCI chess engine in C++. Active development since December 2022.</p>
+                                        <p><a href="https://github.com/bistromath25/moraband" target="_blank">Challenge Moraband!</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="project coming-soon">
-                        <div class="img-overlay-text">
-                            <h2>Coming soon...</h2>
-                            <p><br>Coming soon...</p>
-                            <p><br><a href="">Stay tuned!</a></p>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="project-card" id="project-card-2">
+                            <div class="project-card-content" style="display: flex;">
+                                <div style="flex: 50%;">
+                                    <div style="padding: 20px;">
+                                        <h2>Phobos</h2>
+                                        <p>Collaborative, real-time secrets.</p>
+                                        <p><a href="https://phbs.vercel.app/" target="_blank">Share a secret!</a></p>
+                                    </div>
+                                </div>
+                                <div class="project-card-img phobos" style="flex: 50%;"></div>
+                            </div>
+                        </li>
+                        <li class="project-card" id="project-card-3">
+                            <div class="project-card-content" style="display: flex;">
+                                <div class="project-card-img imgdb" style="flex: 50%;"></div>
+                                <div style="flex: 50%;">
+                                    <div style="padding: 20px;">
+                                        <h2>Imgdb</h2>
+                                        <p>Node js image host.</p>
+                                        <p><a href="https://github.com/bistromath25/imgdb" target="_blank">Upload an image!</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project-card" id="project-card-4">
+                            <div class="project-card-content" style="display: flex;">
+                                <div style="flex: 50%;">
+                                    <div style="padding: 20px;">
+                                        <h2>Wordpredictor</h2>
+                                        <p>Trigram language model based on Markov chains using Python's nltk module.</p>
+                                        <p><a href="https://github.com/bistromath25/wordpredictor" target="_blank">Predict some words!</a></p>
+                                    </div>
+                                </div>
+                                <div class="project-card-img wordpredictor" style="flex: 50%;"></div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="contact" id="contact">
-                <p>Find me on <a href="https://www.linkedin.com/in/brighten-zhang/">linkedin</a>, visit my <a href="https://github.com/bistromath25">github</a>, or shoot me an <a href="mailto:brightenzhang@gmail.com">email</a> ...<br>I look forward to hearing from you &#128513;</p>
+                <p class="lg">Find me on <a href="https://www.linkedin.com/in/brighten-zhang/">linkedin</a>, visit my <a href="https://github.com/bistromath25">github</a>, or shoot me an <a href="mailto:brightenzhang@gmail.com">email</a> ...<br>I look forward to hearing from you &#128513;</p>
+                <p class="nlg" style="padding: 8px; border-radius: 20px; border: 1px solid var(--nav-border); box-shadow: 2px 2px var(--foreground-3);">Find me on <a href="https://www.linkedin.com/in/brighten-zhang/">linkedin</a>, visit my <a href="https://github.com/bistromath25">github</a>, or shoot me an <a href="mailto:brightenzhang@gmail.com">email</a> ...<br>I look forward to hearing from you &#128513;</p>
             </section>
             <!-- <section id="gallery" style="padding-bottom: 0px; min-height: 0px;">
                 <div style="border-radius: 10px; z-index: 999;">

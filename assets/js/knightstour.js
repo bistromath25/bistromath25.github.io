@@ -14,7 +14,7 @@ var tourPath;
 
 function initKnightsTour() {
 	var documentWidth = document.body.scrollWidth;
-	if (documentWidth >= 700) {
+	if (documentWidth >= 768) {
 		canvas = document.createElement("canvas");
 		canvas.setAttribute("id", "knightstour-canvas");
 		document.getElementById("knightstour").appendChild(canvas);

@@ -23,6 +23,11 @@
 
     --light-blue: #8af3ff;
     --white: #ffffff;
+
+    --project-card-height: 40vw;
+    --project-card-margin: 4vw;
+    --project-card-top-offset: 1em;
+    --num-project-cards: 5;
 }
 
 .animate-in {
@@ -354,17 +359,8 @@ section {
     position: relative;
     font-size: 100px;
     color: var(--light-blue);
+    text-shadow: 5px 5px var(--foreground-3);
     -webkit-text-stroke: 1px var(--foreground-1);
-}
-
-.title-hover {
-    transition: background-color 300ms ease-in-out;
-}
-
-.title-hover:hover {
-    background-color: var(--light-blue);
-    -webkit-text-stroke: 2px var(--white);
-    border-radius: 24px;
 }
 
 .subtitle {
@@ -375,6 +371,7 @@ section {
 .subtitle h2 {
     font-size: 50px;
     color: var(--white);
+    text-shadow: 3px 3px var(--foreground-3);
     -webkit-text-stroke: 1px var(--foreground-1);
 }
 
@@ -408,6 +405,7 @@ section {
 
 #knightstour {
     z-index: 0;
+    display: block;
 }
 
 .about {
@@ -519,20 +517,12 @@ section {
     background-image: url('../img/projects/wordpredictor.png');
 }
 
-.projects .col .project.bookshelf {
-    background-image: url('../img/projects/bookshelf.png');
+.projects .col .project.phobos {
+    background-image: url('../img/projects/phobos.png');
 }
 
 .projects .col .project.coming-soon {
     background-color: var(--project-background);
-}
-
-.projects .col .project.blog {
-    background-image: url('../img/projects/blog.png');
-}
-
-.knightstour {
-    padding-bottom: 0;
 }
 
 .contact {
@@ -549,6 +539,62 @@ section {
 .contact p {
     text-align: center;
     color: var(--foreground-3);
+}
+
+.project-cards {
+    padding-bottom: calc(var(--num-project-cards) * var(--project-card-top-offset));
+    margin-bottom: var(--project-card-margin);
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--num-project-cards), var(--project-card-height));
+    gap: var(--project-card-margin);
+}
+
+.project-card {
+    position: sticky;
+    top: 8vw;
+    border-radius: 16px;
+    transform-origin: 50% 0%;
+    will-change: transform;
+    height: calc(100vh - 16vw);
+    width: 100%;
+    background-color: var(--white);
+}
+
+.project-card-content {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.1), 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "text img";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: stretch;
+}
+
+.project-card-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-card .moraband {
+    background-image: url('../img/projects/chess.jpeg');
+}
+
+.project-card .phobos {
+    background-image: url('../img/projects/phobos.png');
+}
+
+.project-card .imgdb {
+    background-image: url('../img/projects/imgdb.PNG');
+}
+
+.project-card .wordpredictor {
+    background-image: url('../img/projects/wordpredictor.png');
 }
 
 .gallery {
@@ -577,6 +623,14 @@ section {
     /* height: calc(100vw * 0.8 / 3); */
 }
 
+.lg {
+    display: block;
+}
+
+.nlg {
+    display: none;
+}
+
 @media only screen and (min-width: 1200px) {
     main {
         max-width: 1200px;
@@ -596,6 +650,28 @@ section {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    #knightstour {
+        display: none;
+    }
+
+    .side.x {
+        display: none;
+    }
+
+    .side.y {
+        display: none;
+    }
+
+    .lg {
+        display: none;
+    }
+
+    .nlg {
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     main::after {
         top: 8vw;
@@ -612,12 +688,14 @@ section {
 
     .title h1 {
         font-size: 40px;
+        text-shadow: none;
     }
 
     .subtitle h2 {
-        font-size: 16px;
+        font-size: 20px;
         color: var(--foreground-1);
-        -webkit-text-stroke: none
+        text-shadow: none;
+        -webkit-text-stroke: none;
     }
 
     .projects {
@@ -645,12 +723,10 @@ section {
 
     .side.x {
         display: none;
-        width: 8vw;
     }
 
     .side.y {
         display: none;
-        height: 8vw;
     }
 
     nav {
@@ -686,5 +762,9 @@ section {
     .about .text,
     .contact p {
         max-width: calc(100% - 32px);
+    }
+
+    .text {
+        text-align: justify;
     }
 }
