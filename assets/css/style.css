@@ -517,8 +517,8 @@ section {
     background-image: url('../img/projects/wordpredictor.png');
 }
 
-.projects .col .project.phobos {
-    background-image: url('../img/projects/phobos.png');
+.projects .col .project.pmal {
+    background-image: url('../img/projects/pmal.png');
 }
 
 .projects .col .project.coming-soon {
@@ -585,8 +585,8 @@ section {
     background-image: url('../img/projects/chess.jpeg');
 }
 
-.project-card .phobos {
-    background-image: url('../img/projects/phobos.png');
+.project-card .pmal {
+    background-image: url('../img/projects/pmal.png');
 }
 
 .project-card .imgdb {
